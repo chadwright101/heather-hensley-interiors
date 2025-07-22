@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 
 import "@/_styles/globals.css";
+import Header from "@/_components/navigation/header/header";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hensleyinteriors.co.za/"),
@@ -30,7 +31,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
