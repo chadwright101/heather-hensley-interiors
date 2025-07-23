@@ -112,7 +112,7 @@
   }
 
   a {
-    @apply hover:desktop:text-link-blue ease-in-out duration-300;
+    @apply min-[1000px]:text-light-brown ease-in-out duration-200;
   }
 }
 

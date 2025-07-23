@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 
 import "@/_styles/globals.css";
 import Header from "@/_components/navigation/header/header";
+import { Footer } from "@/_components/navigation/footer/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hensleyinteriors.co.za/"),
@@ -34,6 +35,7 @@ export default function RootLayout({
       <body>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

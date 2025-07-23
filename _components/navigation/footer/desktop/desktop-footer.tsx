@@ -5,7 +5,7 @@ import navData from "@/_data/nav-data.json";
 
 export function DesktopFooter() {
   return (
-    <div className="hidden desktop:block bg-white pt-7 pb-5">
+    <div className="hidden min-[1000px]:block bg-dark-brown pt-7 pb-5">
       <div className="flex justify-between px-[52px]">
         <nav>
           <ul className="flex flex-col">
@@ -14,7 +14,7 @@ export function DesktopFooter() {
                 <li key={item.title}>
                   <Link
                     href={item.url}
-                    className=" text-[14px] font-light hover:text-opacity-80 ease-in-out duration-200 desktop:hover:text-green"
+                    className=" text-[14px] font-light text-beige hover:text-opacity-80 ease-in-out duration-200 hover:text-light-brown"
                   >
                     {item.title}
                   </Link>
@@ -26,18 +26,18 @@ export function DesktopFooter() {
 
         <div className="flex flex-col gap-3 items-end justify-around">
           <Image
-            src="/logo/swift-tool-hire-logo.png"
-            alt="Swift Tool Hire"
-            width={60}
-            height={64}
-            className="w-[60px] h-auto"
+            src="/logo/heather-hensley-interiors-logo.png"
+            alt="Heather Hensley Interiors"
+            width={150}
+            height={150}
+            className="w-[150px] h-auto"
           />
           <div className="text-right">
-            <p className="text-[14px]">Designed & developed by</p>
+            <p className="text-[14px] text-beige">Designed & developed by</p>
             <Link
               href="https://thewrightdesigns.co.za"
               aria-label="The Wright Designs"
-              className="text-[14px] font-light text-link-blue"
+              className="text-[14px] text-beige font-light underline underline-offset-4 hover:text-light-brown"
               target="_blank"
             >
               The Wright Designs
@@ -46,17 +46,13 @@ export function DesktopFooter() {
         </div>
       </div>
       <div className="text-center col-span-2 place-self-center w-full mt-6">
-        <h4
-          className="font-light pt-5 text-[14px]"
-          style={{ fontVariant: "normal" }}
-        >
-          © Swift Tool Hire |
+        <h4 className="font-light pt-5 text-[14px] normal-case text-beige">
+          © Heather Hensley Interiors |{" "}
           <Link
             href="/"
-            className="text-[14px] font-light text-link-blue"
-            style={{ fontVariant: "normal" }}
+            className="text-[14px] text-beige font-light underline underline-offset-4 hover:text-light-brown"
           >
-            www.swifttoolhire.co.za
+            www.hensleyinteriors.co.za
           </Link>
         </h4>
       </div>

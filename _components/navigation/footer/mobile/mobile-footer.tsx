@@ -3,35 +3,31 @@ import Link from "next/link";
 
 export function MobileFooter() {
   return (
-    <div className="flex flex-col gap-5 items-center px-7 py-10 desktop:hidden">
-      <div className="text-center">
-        <h4
-          className="font-light text-[14px]"
-          style={{ fontVariant: "normal" }}
-        >
-          © Swift Tool Hire
+    <div className="flex flex-col gap-5 items-center px-7 py-10 min-[1000px]:hidden">
+      <Image
+        src="/logo/heather-hensley-interiors-logo.png"
+        alt="SHeather Hensley Interiors"
+        width={500}
+        height={290}
+        className="h-auto w-2/3 max-w-[400px]"
+      />
+      <div className="text-center mt-2 border-b border-white/25 pb-5">
+        <h4 className="font-light text-[14px] text-beige normal-case">
+          © Heather Hensley Interiors
         </h4>
         <Link
           href="/"
-          className="text-[14px] p-2 -m-2 text-link-blue font-light"
+          className="text-[14px] underline underline-offset-4 p-2 -m-2 text-beige font-light"
         >
-          www.swifttoolhire.co.za
+          www.hensleyinteriors.co.za
         </Link>
       </div>
-
-      <Image
-        src="/logo/swift-tool-hire-logo.png"
-        alt="Swift Tool Hire"
-        width={120}
-        height={100}
-        className="w-[104px] h-auto"
-      />
       <div className="text-center">
-        <p className="text-[14px]">Designed & developed by</p>
+        <p className="text-[14px] text-beige">Designed & developed by</p>
         <Link
           href="https://thewrightdesigns.co.za"
           aria-label="The Wright Designs"
-          className="text-[14px] text-link-blue p-2 -m-2 font-light"
+          className="text-[14px] text-beige underline underline-offset-4 p-2 -m-2 font-light"
           target="_blank"
         >
           The Wright Designs
