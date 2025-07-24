@@ -32,7 +32,7 @@ export function DesktopFooter() {
             height={150}
             className="w-[150px] h-auto"
           />
-          <div className="text-right">
+          <div className="text-right mr-[36px]">
             <p className="text-[14px] text-beige">Designed & developed by</p>
             <Link
               href="https://thewrightdesigns.co.za"
@@ -49,7 +49,7 @@ export function DesktopFooter() {
         <h4 className="font-light pt-5 text-[14px] normal-case text-beige">
           © Heather Hensley Interiors |{" "}
           <Link
-            href="/"
+            href="https://www.hensleyinteriors.co.za"
             className="text-[14px] text-beige font-light underline underline-offset-4 hover:text-light-brown"
           >
             www.hensleyinteriors.co.za

@@ -16,7 +16,7 @@ export function MobileFooter() {
           © Heather Hensley Interiors
         </h4>
         <Link
-          href="/"
+          href="https://www.hensleyinteriors.co.za"
           className="text-[14px] underline underline-offset-4 p-2 -m-2 text-beige font-light"
         >
           www.hensleyinteriors.co.za

@@ -75,6 +75,7 @@
   --text-paragraph--font-weight: 400;
   --text-heading: 1.875rem;
   --text-heading--font-weight: 200;
+  --text-heading--line-height: 30px;
 
   --breakpoint-*: initial;
   --breakpoint-phone: 425px;
