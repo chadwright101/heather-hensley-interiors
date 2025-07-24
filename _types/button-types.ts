@@ -2,7 +2,6 @@ export interface ButtonProps {
   children: React.ReactNode;
   onClick?: () => void;
   cssClasses?: string;
-  colorGreen?: boolean;
   href?: string;
   disabled?: boolean;
   ariaLabel?: string;

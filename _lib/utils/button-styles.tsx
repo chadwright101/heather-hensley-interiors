@@ -1,21 +1,14 @@
 import classNames from "classnames";
 
 export const buttonStyles = (
-  colorGreen?: boolean,
   cssClasses?: string,
   disabled?: boolean,
   pending?: boolean
 ) =>
   classNames(
-    "flex text-[18px] font-normal text-center py-1.5 px-4 justify-center duration-500 border-4 rounded-[6px] font-bold min-w-[100px] cursor-pointer",
+    "bg-light-brown text-white flex text-paragraph uppercase font-light text-center py-2 px-4 justify-center duration-500 rounded-[6px] min-w-[100px] cursor-pointer min-[1000px]:hover:scale-[102%]",
     cssClasses,
     {
-      "desktop:hover:bg-white desktop:hover:text-black":
-        !colorGreen && !disabled && !pending,
-      "bg-light-green border-light-green text-white": colorGreen,
-      "bg-light-green border-white text-white": !colorGreen,
-      "desktop:hover:bg-white desktop:hover:border-light-green desktop:hover:text-black":
-        colorGreen && !disabled && !pending,
       "opacity-50 cursor-not-allowed hover:none": pending,
     }
   );
