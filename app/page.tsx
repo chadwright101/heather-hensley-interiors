@@ -10,12 +10,26 @@ import categoryData from "@/_data/product-data.json";
 const { categories } = categoryData;
 
 export default function Home() {
-  const [showCategory, setShowCategory] = useState("scatters");
+  const [showCategory, setShowCategory] = useState("Scatters");
   const [animationKey, setAnimationKey] = useState(0);
 
   const handleCategoryChange = (category: string) => {
     setShowCategory(category);
     setAnimationKey((prev) => prev + 1);
+  };
+
+  const getCategoryData = (category: string) => {
+    const mapping: { [key: string]: string } = {
+      Scatters: "scatters",
+      Ottomans: "ottomans",
+      "Bedside pedestals": "bedside pedestals",
+      Cabinets: "cabinets",
+      Headboards: "headboards",
+    };
+    return (
+      categories[mapping[category] as keyof typeof categories] ||
+      categories.scatters
+    );
   };
 
   return (
@@ -29,11 +43,7 @@ export default function Home() {
       />
       <CategoryPortfolio
         key={animationKey}
-        categoryData={
-          showCategory === "scatters"
-            ? categories.scatters
-            : categories.ottomans
-        }
+        categoryData={getCategoryData(showCategory)}
       />
     </div>
   );

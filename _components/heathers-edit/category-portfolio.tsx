@@ -62,14 +62,17 @@ export default function CategoryPortfolio({ categoryData }: PortfolioProps) {
           </div>
           <div className="p-5 space-y-3">
             <h2 className="text-heading font-light text-black">{name}</h2>
-            <p className="text-light-brown font-semibold">
-              {prices[0].amountExVat}
+            <p className="grid">
+              Starting from{" "}
+              <span className="text-light-brown font-semibold">
+                R{prices[0].amountExVat}
+              </span>
             </p>
             <ButtonLink
               href={`/heathers-edit/${name.toLowerCase().replace(/\s+/g, "-")}`}
               ariaLabel={name}
             >
-              Enquire now
+              More info
             </ButtonLink>
           </div>
         </div>
