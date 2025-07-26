@@ -1,28 +1,24 @@
 {
   "filter": [
     {
-      "category": "scatters",
+      "category": "Scatters",
       "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
     },
     {
-      "category": "ottomans",
-      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg"
+      "category": "Ottomans",
+      "image": "https://picsum.photos/600/400"
     },
     {
-      "category": "throws",
-      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
+      "category": "Bedside pedestals",
+      "image": "https://picsum.photos/600/300"
     },
     {
-      "category": "rugs",
-      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg"
+      "category": "Cabinets",
+      "image": "https://picsum.photos/400/200"
     },
     {
-      "category": "lamps",
-      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
-    },
-    {
-      "category": "mirrors",
-      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg"
+      "category": "Headboards",
+      "image": "https://picsum.photos/400/400"
     }
   ],
   "categories": {
@@ -57,6 +53,27 @@
         "quantity": 2
       },
       {
+        "name": "Quilted Blush",
+        "size": "60cm x 60cm",
+        "description": [
+          "Quiet tone, soft texture. Our scatter collection is curated to layer. This subtle dusty pink is available now."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover supplied with down inner",
+            "amountExVat": 995,
+            "amountInclVat": 1100
+          }
+        ],
+        "images": [
+          "/images/products/scatters/quilted-blush/quilted-blush-1.jpg",
+          "/images/products/scatters/quilted-blush/quilted-blush-2.jpg",
+          "/images/products/scatters/quilted-blush/quilted-blush-3.jpg",
+          "/images/products/scatters/quilted-blush/quilted-blush-4.jpg"
+        ],
+        "quantity": 2
+      },
+      {
         "name": "Aqua Bliss",
         "size": "60cm x 60cm",
         "description": [
@@ -86,148 +103,232 @@
     ],
     "ottomans": [
       {
-        "name": "Ottoman 1",
-        "size": "50cm x 70cm",
+        "name": "Classic Velvet Ottoman",
+        "size": "120cm x 45cm x 45cm",
         "description": [
-          "Fronts of cushion covers in Ardmore animal print backed and piped in a lovely Tangerine colour fabric.",
-          "Option to be supplied with or without a down inner."
+          "Upholstered in luxurious velvet with deep button tufting.",
+          "Solid wood legs for durability."
         ],
         "prices": [
           {
-            "name": "Cushion cover",
-            "amountExVat": 722.13,
-            "amountInclVat": 830.45
-          },
-          {
-            "name": "Down inner",
-            "amountExVat": 343.48,
-            "amountInclVat": 395.0,
-            "note": "55cm x 75cm down inner is required"
+            "name": "Ottoman",
+            "amountExVat": 2600.0,
+            "amountInclVat": 2990.0
           }
         ],
         "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-1.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-4.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-5.jpg"
+          "https://picsum.photos/400/600",
+          "https://picsum.photos/500/600"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Storage Ottoman",
+        "size": "100cm x 40cm x 40cm",
+        "description": [
+          "Features a lift-up lid for convenient storage.",
+          "Upholstered in durable linen fabric."
+        ],
+        "prices": [
+          {
+            "name": "Ottoman",
+            "amountExVat": 2100.0,
+            "amountInclVat": 2415.0
+          }
+        ],
+        "images": [
+          "https://picsum.photos/600/400",
+          "https://picsum.photos/600/300"
+        ],
+        "quantity": 3
+      },
+      {
+        "name": "Round Pouf Ottoman",
+        "size": "60cm diameter x 40cm height",
+        "description": [
+          "Soft round pouf, perfect for extra seating or as a footrest.",
+          "Available in multiple colors."
+        ],
+        "prices": [
+          {
+            "name": "Ottoman",
+            "amountExVat": 1450.0,
+            "amountInclVat": 1667.5
+          }
+        ],
+        "images": ["https://picsum.photos/500/600"],
+        "quantity": 5
+      }
+    ],
+    "bedside pedestals": [
+      {
+        "name": "Modern Oak Pedestal",
+        "size": "50cm x 40cm x 60cm",
+        "description": [
+          "Crafted from solid oak with a natural finish.",
+          "Single drawer and open shelf for storage."
+        ],
+        "prices": [
+          {
+            "name": "Pedestal",
+            "amountExVat": 1850.0,
+            "amountInclVat": 2127.5
+          }
+        ],
+        "images": [
+          "https://picsum.photos/500/500",
+          "https://picsum.photos/600/500"
         ],
         "quantity": 2
       },
       {
-        "name": "Ottoman 2",
-        "size": "60cm x 60cm",
+        "name": "White Minimalist Pedestal",
+        "size": "45cm x 35cm x 55cm",
         "description": [
-          "Aqua scatter cushions with some spice. Piping in Tangerine.",
-          "Supplied with or without a down inner."
+          "Sleek white finish with push-to-open drawer.",
+          "Perfect for modern bedrooms."
         ],
         "prices": [
           {
-            "name": "Cushion cover",
-            "amountExVat": 669.56,
-            "amountInclVat": 770.0
-          },
+            "name": "Pedestal",
+            "amountExVat": 1600.0,
+            "amountInclVat": 1840.0
+          }
+        ],
+        "images": ["https://picsum.photos/400/600"],
+        "quantity": 4
+      },
+      {
+        "name": "Vintage Pedestal",
+        "size": "55cm x 38cm x 60cm",
+        "description": [
+          "Distressed wood finish for a vintage look.",
+          "Two drawers with antique brass handles."
+        ],
+        "prices": [
           {
-            "name": "Down inner",
-            "amountExVat": 256.52,
-            "amountInclVat": 295.0,
-            "note": "65cm x 65cm inner required"
+            "name": "Pedestal",
+            "amountExVat": 1950.0,
+            "amountInclVat": 2242.5
           }
         ],
         "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/scatters/aqua-bliss/aqua-bliss-1.jpg",
-          "/images/products/scatters/aqua-bliss/aqua-bliss-3.jpg"
+          "https://picsum.photos/600/500",
+          "https://picsum.photos/400/600"
+        ],
+        "quantity": 1
+      }
+    ],
+    "cabinets": [
+      {
+        "name": "Glass Display Cabinet",
+        "size": "90cm x 40cm x 180cm",
+        "description": [
+          "Tall cabinet with glass doors and shelves.",
+          "Ideal for displaying decor or collectibles."
+        ],
+        "prices": [
+          {
+            "name": "Cabinet",
+            "amountExVat": 4200.0,
+            "amountInclVat": 4830.0
+          }
+        ],
+        "images": ["https://picsum.photos/400/400"],
+        "quantity": 1
+      },
+      {
+        "name": "Rustic Sideboard",
+        "size": "150cm x 45cm x 85cm",
+        "description": [
+          "Rustic wood finish with three drawers and two cabinets.",
+          "Perfect for dining or living rooms."
+        ],
+        "prices": [
+          {
+            "name": "Cabinet",
+            "amountExVat": 3700.0,
+            "amountInclVat": 4255.0
+          }
+        ],
+        "images": [
+          "https://picsum.photos/500/500",
+          "https://picsum.photos/700/700"
         ],
         "quantity": 2
-      }
-    ],
-    "throws": [
+      },
       {
-        "name": "Luxury Mohair Throw",
-        "size": "130cm x 180cm",
+        "name": "Compact Shoe Cabinet",
+        "size": "80cm x 35cm x 100cm",
         "description": [
-          "Soft mohair throw in a classic grey shade.",
-          "Perfect for adding warmth and style to any room."
+          "Slim cabinet with multiple shelves for shoe storage.",
+          "White lacquered finish."
         ],
         "prices": [
           {
-            "name": "Throw",
-            "amountExVat": 1200.0,
-            "amountInclVat": 1380.0
+            "name": "Cabinet",
+            "amountExVat": 2100.0,
+            "amountInclVat": 2415.0
           }
         ],
-        "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/throws/mohair-throw/mohair-throw-2.jpg"
-        ],
-        "quantity": 5
-      }
-    ],
-    "rugs": [
-      {
-        "name": "Handwoven Jute Rug",
-        "size": "200cm x 300cm",
-        "description": [
-          "Eco-friendly handwoven jute rug.",
-          "Durable and stylish for high-traffic areas."
-        ],
-        "prices": [
-          {
-            "name": "Rug",
-            "amountExVat": 2500.0,
-            "amountInclVat": 2875.0
-          }
-        ],
-        "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/rugs/jute-rug/jute-rug-2.jpg"
-        ],
+        "images": ["https://picsum.photos/800/600"],
         "quantity": 3
       }
     ],
-    "lamps": [
+    "headboards": [
       {
-        "name": "Ceramic Table Lamp",
-        "size": "40cm height",
+        "name": "Upholstered Headboard",
+        "size": "Queen: 160cm x 120cm",
         "description": [
-          "Elegant ceramic table lamp with linen shade.",
-          "Available in white and blue."
+          "Padded and upholstered in soft grey fabric.",
+          "Wall-mount or bed-frame compatible."
         ],
         "prices": [
           {
-            "name": "Lamp",
-            "amountExVat": 950.0,
-            "amountInclVat": 1092.5
+            "name": "Headboard",
+            "amountExVat": 2200.0,
+            "amountInclVat": 2530.0
           }
         ],
-        "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/lamps/ceramic-lamp/ceramic-lamp-2.jpg"
-        ],
-        "quantity": 4
-      }
-    ],
-    "mirrors": [
-      {
-        "name": "Round Wall Mirror",
-        "size": "80cm diameter",
-        "description": [
-          "Modern round wall mirror with a thin brass frame.",
-          "Ideal for entryways or living rooms."
-        ],
-        "prices": [
-          {
-            "name": "Mirror",
-            "amountExVat": 1800.0,
-            "amountInclVat": 2070.0
-          }
-        ],
-        "images": [
-          "/images/products/mirrors/round-mirror/round-mirror-1.jpg",
-          "/images/products/mirrors/round-mirror/round-mirror-2.jpg"
-        ],
+        "images": ["https://picsum.photos/800/800"],
         "quantity": 2
+      },
+      {
+        "name": "Wooden Slat Headboard",
+        "size": "King: 190cm x 110cm",
+        "description": [
+          "Natural wood slats for a minimalist look.",
+          "Easy to install and maintain."
+        ],
+        "prices": [
+          {
+            "name": "Headboard",
+            "amountExVat": 1850.0,
+            "amountInclVat": 2127.5
+          }
+        ],
+        "images": [
+          "https://picsum.photos/400/600",
+          "https://picsum.photos/600/400"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Button-Tufted Headboard",
+        "size": "Double: 140cm x 115cm",
+        "description": [
+          "Elegant button-tufted design in navy blue fabric.",
+          "Adds a touch of luxury to any bedroom."
+        ],
+        "prices": [
+          {
+            "name": "Headboard",
+            "amountExVat": 2000.0,
+            "amountInclVat": 2300.0
+          }
+        ],
+        "images": ["https://picsum.photos/700/600"],
+        "quantity": 3
       }
     ]
   }
