@@ -10,6 +10,7 @@ export function MobileFooter() {
         width={500}
         height={290}
         className="h-auto w-2/3 max-w-[400px]"
+        quality={60}
       />
       <div className="text-center mt-2 border-b border-white/25 pb-5">
         <h4 className="font-light text-[14px] text-beige normal-case">
