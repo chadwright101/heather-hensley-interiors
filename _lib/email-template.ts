@@ -15,13 +15,13 @@ export const emailTemplate = ({
   <head>
     <meta charSet="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Swift Tool Hire</title>
+    <title>Heather Hensley Interiors</title>
   </head>
   <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 1rem;">
-    <table style="width: 100%; background-color: #134b23;">
+    <table style="width: 100%; background-color: #9b6546;">
       <tr>
         <td>
-          <h1 style="padding: 0 1rem; color: white">Swift Tool Hire</h1>
+          <h1 style="padding: 0 1rem; color: white">Heather Hensley Interiors</h1>
         </td>
       </tr>
     </table>

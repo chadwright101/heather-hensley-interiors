@@ -2,37 +2,5 @@
   "contact": {
     "email": "hensleysinteriors@icloud.com",
     "phone": "082 652 6778"
-  },
-  "products": [
-    {
-      "name": "Artisan Oak Dining Table",
-      "price": "$2,460",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop"
-    },
-    {
-      "name": "Heritage Leather Armchair",
-      "price": "$1,980",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop&auto=format&q=80"
-    },
-    {
-      "name": "Rustic Pine Bookshelf",
-      "price": "$1,125",
-      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop&auto=format&q=80"
-    },
-    {
-      "name": "Walnut Coffee Table",
-      "price": "$890",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop&auto=format&q=80&sig=1"
-    },
-    {
-      "name": "Reclaimed Wood Dresser",
-      "price": "$1,650",
-      "image": "https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=800&h=800&fit=crop&auto=format&q=80&sig=2"
-    },
-    {
-      "name": "Cedar Storage Bench",
-      "price": "$675",
-      "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&h=800&fit=crop&auto=format&q=80&sig=3"
-    }
-  ]
+  }
 }

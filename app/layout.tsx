@@ -6,7 +6,7 @@ import { Footer } from "@/_components/navigation/footer/footer";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hensleyinteriors.co.za/"),
-  title: "Heather Hensley Interiors",
+  title: "Shop - Heather Hensley Interiors",
   description:
     "At Heather Hensley Interiors, every project is a testament to our love of layered design— spaces that are timeless, distinct, and brimming with character.",
   keywords:
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
       "At Heather Hensley Interiors, every project is a testament to our love of layered design— spaces that are timeless, distinct, and brimming with character.",
     type: "website",
     locale: "en_ZA",
-    siteName: "Heather Hensley Interiors",
+    siteName: "Shop - Heather Hensley Interiors",
     images: [
       {
         url: "/open-graph-image.webp",

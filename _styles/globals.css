@@ -194,10 +194,10 @@
   left: 0 !important;
 }
 
-/* .swiper-button-next:hover,
+.swiper-button-next:hover,
 .swiper-button-prev:hover {
-  @apply bg-light-light-brown/80;
-} */
+  @apply bg-light-brown/80;
+}
 
 .swiper-button-next:hover:after,
 .swiper-button-prev:hover:after {

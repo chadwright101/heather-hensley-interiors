@@ -1,0 +1,234 @@
+{
+  "filter": [
+    {
+      "category": "scatters",
+      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
+    },
+    {
+      "category": "ottomans",
+      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg"
+    },
+    {
+      "category": "throws",
+      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
+    },
+    {
+      "category": "rugs",
+      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg"
+    },
+    {
+      "category": "lamps",
+      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
+    },
+    {
+      "category": "mirrors",
+      "image": "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg"
+    }
+  ],
+  "categories": {
+    "scatters": [
+      {
+        "name": "Ardmore Leopard print",
+        "size": "50cm x 70cm",
+        "description": [
+          "Fronts of cushion covers in Ardmore animal print backed and piped in a lovely Tangerine colour fabric.",
+          "Option to be supplied with or without a down inner."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountExVat": 722.13,
+            "amountInclVat": 830.45
+          },
+          {
+            "name": "Down inner",
+            "amountExVat": 343.48,
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm down inner is required"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-1.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-4.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-5.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Aqua Bliss",
+        "size": "60cm x 60cm",
+        "description": [
+          "Aqua scatter cushions with some spice. Piping in Tangerine.",
+          "Supplied with or without a down inner."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountExVat": 669.56,
+            "amountInclVat": 770.0
+          },
+          {
+            "name": "Down inner",
+            "amountExVat": 256.52,
+            "amountInclVat": 295.0,
+            "note": "65cm x 65cm inner required"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/aqua-bliss/aqua-bliss-1.jpg",
+          "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg",
+          "/images/products/scatters/aqua-bliss/aqua-bliss-3.jpg"
+        ],
+        "quantity": 2
+      }
+    ],
+    "ottomans": [
+      {
+        "name": "Ottoman 1",
+        "size": "50cm x 70cm",
+        "description": [
+          "Fronts of cushion covers in Ardmore animal print backed and piped in a lovely Tangerine colour fabric.",
+          "Option to be supplied with or without a down inner."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountExVat": 722.13,
+            "amountInclVat": 830.45
+          },
+          {
+            "name": "Down inner",
+            "amountExVat": 343.48,
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm down inner is required"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-1.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-4.jpg",
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-5.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Ottoman 2",
+        "size": "60cm x 60cm",
+        "description": [
+          "Aqua scatter cushions with some spice. Piping in Tangerine.",
+          "Supplied with or without a down inner."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountExVat": 669.56,
+            "amountInclVat": 770.0
+          },
+          {
+            "name": "Down inner",
+            "amountExVat": 256.52,
+            "amountInclVat": 295.0,
+            "note": "65cm x 65cm inner required"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/scatters/aqua-bliss/aqua-bliss-1.jpg",
+          "/images/products/scatters/aqua-bliss/aqua-bliss-3.jpg"
+        ],
+        "quantity": 2
+      }
+    ],
+    "throws": [
+      {
+        "name": "Luxury Mohair Throw",
+        "size": "130cm x 180cm",
+        "description": [
+          "Soft mohair throw in a classic grey shade.",
+          "Perfect for adding warmth and style to any room."
+        ],
+        "prices": [
+          {
+            "name": "Throw",
+            "amountExVat": 1200.0,
+            "amountInclVat": 1380.0
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/throws/mohair-throw/mohair-throw-2.jpg"
+        ],
+        "quantity": 5
+      }
+    ],
+    "rugs": [
+      {
+        "name": "Handwoven Jute Rug",
+        "size": "200cm x 300cm",
+        "description": [
+          "Eco-friendly handwoven jute rug.",
+          "Durable and stylish for high-traffic areas."
+        ],
+        "prices": [
+          {
+            "name": "Rug",
+            "amountExVat": 2500.0,
+            "amountInclVat": 2875.0
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/rugs/jute-rug/jute-rug-2.jpg"
+        ],
+        "quantity": 3
+      }
+    ],
+    "lamps": [
+      {
+        "name": "Ceramic Table Lamp",
+        "size": "40cm height",
+        "description": [
+          "Elegant ceramic table lamp with linen shade.",
+          "Available in white and blue."
+        ],
+        "prices": [
+          {
+            "name": "Lamp",
+            "amountExVat": 950.0,
+            "amountInclVat": 1092.5
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
+          "/images/products/lamps/ceramic-lamp/ceramic-lamp-2.jpg"
+        ],
+        "quantity": 4
+      }
+    ],
+    "mirrors": [
+      {
+        "name": "Round Wall Mirror",
+        "size": "80cm diameter",
+        "description": [
+          "Modern round wall mirror with a thin brass frame.",
+          "Ideal for entryways or living rooms."
+        ],
+        "prices": [
+          {
+            "name": "Mirror",
+            "amountExVat": 1800.0,
+            "amountInclVat": 2070.0
+          }
+        ],
+        "images": [
+          "/images/products/mirrors/round-mirror/round-mirror-1.jpg",
+          "/images/products/mirrors/round-mirror/round-mirror-2.jpg"
+        ],
+        "quantity": 2
+      }
+    ]
+  }
+}
