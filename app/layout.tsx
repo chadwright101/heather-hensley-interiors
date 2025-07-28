@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 
-import "@/_styles/globals.css";
 import Header from "@/_components/navigation/header/header";
 import { Footer } from "@/_components/navigation/footer/footer";
+
+import "@/_styles/globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hensleyinteriors.co.za/"),

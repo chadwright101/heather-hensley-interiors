@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header
       className={classNames(
-        "sticky left-0 mx-auto bg-dark-brown z-50 ease-in-out duration-300 overflow-y-hidden",
+        "sticky left-0 mx-auto z-50 ease-in-out duration-300 overflow-y-hidden",
         {
           "-top-3 min-[1000px]:-top-5": isScrolled,
           "top-0": !isScrolled,

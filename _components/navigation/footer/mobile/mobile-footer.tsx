@@ -5,7 +5,7 @@ export function MobileFooter() {
   return (
     <div className="flex flex-col gap-5 items-center px-7 py-10 min-[1000px]:hidden">
       <Image
-        src="/logo/heather-hensley-interiors-logo.png"
+        src="/logo/heather-hensley-interiors-logo-large.png"
         alt="SHeather Hensley Interiors"
         width={500}
         height={290}

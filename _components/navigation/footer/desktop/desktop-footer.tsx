@@ -26,7 +26,7 @@ export function DesktopFooter() {
 
         <div className="flex flex-col gap-3 items-end justify-around">
           <Image
-            src="/logo/heather-hensley-interiors-logo.png"
+            src="/logo/heather-hensley-interiors-logo-large.png"
             alt="Heather Hensley Interiors"
             width={150}
             height={150}

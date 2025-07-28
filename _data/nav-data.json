@@ -1,5 +1,9 @@
 [
   {
+    "title": "Shop Edit",
+    "url": "/"
+  },
+  {
     "title": "Home",
     "url": "https://www.hensleyinteriors.co.za/"
   },
@@ -14,10 +18,6 @@
   {
     "title": "Our Process",
     "url": "https://www.hensleyinteriors.co.za/index.php/services/"
-  },
-  {
-    "title": "Heather's Edit",
-    "url": "/"
   },
   {
     "title": "Contact",

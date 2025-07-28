@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 
-import CategoryPortfolio from "@/_components/heathers-edit/category-portfolio";
-import PortfolioFilter from "@/_components/heathers-edit/portfolio-filter";
+import CategoryPortfolio from "@/_components/shop-edit/category-portfolio";
+import PortfolioFilter from "@/_components/shop-edit/portfolio-filter";
 
 import categoryData from "@/_data/product-data.json";
 
@@ -33,18 +33,19 @@ export default function Home() {
   };
 
   return (
-    <div className="space-y-10">
-      <h1 className="text-light-brown text-[50px] leading-[50px] border-b-2 border-light-brown pb-5 tablet:text-center">
-        Heather&apos;s Edit
-      </h1>
-      <PortfolioFilter
-        showCategory={showCategory}
-        setShowCategory={handleCategoryChange}
-      />
-      <CategoryPortfolio
-        key={animationKey}
-        categoryData={getCategoryData(showCategory)}
-      />
+    <div>
+      <div className="bg-[url(/images/IMG_1152.jpg)] bg-cover bg-[position:50%_25%] h-[500px] absolute w-full max-w-[1600px] left-1/2 -translate-x-1/2 top-0 tablet:h-[600px] desktop:bg-[position:50%_30%] desktop:h-[800px]" />
+
+      <div className="space-y-10 mt-[375px] tablet:space-y-5 tablet:mt-[475px] min-[1000px]:mt-[455px] desktop:mt-[650px]">
+        <PortfolioFilter
+          showCategory={showCategory}
+          setShowCategory={handleCategoryChange}
+        />
+        <CategoryPortfolio
+          key={animationKey}
+          categoryData={getCategoryData(showCategory)}
+        />
+      </div>
     </div>
   );
 }

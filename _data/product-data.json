@@ -1,25 +1,10 @@
 {
   "filter": [
-    {
-      "category": "Scatters",
-      "image": "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg"
-    },
-    {
-      "category": "Ottomans",
-      "image": "https://picsum.photos/600/400"
-    },
-    {
-      "category": "Bedside pedestals",
-      "image": "https://picsum.photos/600/300"
-    },
-    {
-      "category": "Cabinets",
-      "image": "https://picsum.photos/400/200"
-    },
-    {
-      "category": "Headboards",
-      "image": "https://picsum.photos/400/400"
-    }
+    "Scatters",
+    "Ottomans",
+    "Bedside pedestals",
+    "Cabinets",
+    "Headboards"
   ],
   "categories": {
     "scatters": [
@@ -61,8 +46,8 @@
         "prices": [
           {
             "name": "Cushion cover supplied with down inner",
-            "amountExVat": 995,
-            "amountInclVat": 1100
+            "amountExVat": 995.0,
+            "amountInclVat": 1100.0
           }
         ],
         "images": [

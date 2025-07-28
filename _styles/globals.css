@@ -62,11 +62,12 @@
 
 @theme {
   --color-*: initial;
-  --color-black: #333333;
-  --color-white: #e7e7e3;
-  --color-beige: #d9d2cc;
-  --color-dark-brown: #4B433E;
-  --color-light-brown: #9b6546;
+  --color-black: #231f20;
+  --color-grey: #5e5e5e;
+  --color-white: #ffffff;
+  --color-beige: #faf6f1;
+  --color-dark-brown: #4b433e;
+  --color-light-brown: #9e7f26;
   --color-link-blue: #0000ff;
   --color-transparent: transparent;
 
@@ -84,15 +85,12 @@
 }
 
 @layer components {
-
-
-
   html {
     scroll-behavior: smooth;
   }
 
   * {
-    color: #333333;
+    color: #5e5e5e;
     font-family: 'Proxima Nova', Arial, sans-serif;
   }
 
@@ -170,14 +168,27 @@
   overflow: visible !important;
 }
 
+.swiper-pagination-bullet {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+.swiper-pagination-bullet-active {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+
+
 .swiper-button-next,
 .swiper-button-prev {
   width: 40px !important;
-  height: 100% !important;
-  @apply bg-white/80;
+  height: 40px !important;
+  @apply bg-light-brown/80 rounded-[6px] scale-75;
   top: 22px !important;
   transition: all 0.2s ease;
 }
+
 
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -188,18 +199,28 @@
 
 .swiper-button-next {
   right: 0 !important;
+  top: 18px !important
 }
 
 .swiper-button-prev {
   left: 0 !important;
+  top: 18px !important
 }
 
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  @apply bg-light-brown/80;
+  @apply bg-light-brown/90;
 }
 
-.swiper-button-next:hover:after,
-.swiper-button-prev:hover:after {
+.swiper-button-next:after,
+.swiper-button-prev:after {
   color: white;
+}
+
+.swiper-button-next::after {
+  content: 'next';
+}
+
+.swiper-button-prev::after {
+  content: 'prev';
 }

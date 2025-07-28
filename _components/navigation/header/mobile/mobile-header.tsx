@@ -24,7 +24,14 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
   }, [isOpen]);
 
   return (
-    <div className="relative px-7 py-5 min-[1000px]:hidden">
+    <div
+      className={classNames(
+        "relative px-7 pt-5 pb-7 min-[1000px]:hidden ease-in-out duration-300",
+        {
+          "bg-beige/90": isScrolled,
+        }
+      )}
+    >
       <div
         className={classNames(
           "flex w-full items-center justify-between ease-in-out duration-300",
@@ -33,15 +40,15 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
           }
         )}
       >
-        <Link href="/" className="flex gap-1 items-center">
+        <Link href="/" className="flex gap-1 items-center translate-y-2">
           <Image
-            src="/logo/heather-hensley-interiors-logo.png"
+            src="/logo/heather-hensley-interiors-logo-2.png"
             alt="Heather Hensley Interiors logo"
-            width={367}
-            height={215}
+            width={150}
+            height={100}
             priority
-            className={classNames("h-16 w-auto ease-in-out duration-300", {
-              "scale-80 -translate-y-2": isScrolled,
+            className={classNames("h-auto w-[150px] ease-in-out duration-300", {
+              "scale-90 -translate-y-2 -translate-x-2": isScrolled,
             })}
           />
         </Link>
@@ -77,8 +84,8 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
             className={classNames({
-              "-mt-0.5": isScrolled,
-              "mt-1.5": !isScrolled,
+              "-mt-4.5": isScrolled,
+              "-mt-2.5": !isScrolled,
             })}
           >
             <Image
@@ -97,7 +104,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-[20px] text-beige font-normal p-3 -m-3"
+                    className="text-[20px] text-beige font-normal p-3 -m-3 uppercase"
                   >
                     {title}
                   </Link>
@@ -111,7 +118,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/facebook.svg"
+                  src="/icons/facebook-white.svg"
                   alt="Follow us on Facebook"
                   width={25}
                   height={25}
@@ -123,7 +130,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/instagram.svg"
+                  src="/icons/instagram-white.svg"
                   alt="Follow us on Instagram"
                   width={25}
                   height={25}
