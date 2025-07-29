@@ -26,9 +26,9 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
   return (
     <div
       className={classNames(
-        "relative px-7 pt-5 pb-7 min-[1000px]:hidden ease-in-out duration-300",
+        "relative px-7 pt-5 pb-7 desktop:hidden ease-in-out duration-300",
         {
-          "bg-beige/90": isScrolled,
+          "bg-dark-brown/90": isScrolled,
         }
       )}
     >
@@ -42,7 +42,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
       >
         <Link href="/" className="flex gap-1 items-center translate-y-2">
           <Image
-            src="/logo/heather-hensley-interiors-logo-2.png"
+            src="/logo/heather-hensley-interiors-logo-small.png"
             alt="Heather Hensley Interiors logo"
             width={150}
             height={100}
@@ -118,7 +118,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/facebook-white.svg"
+                  src="/icons/facebook.svg"
                   alt="Follow us on Facebook"
                   width={25}
                   height={25}
@@ -130,7 +130,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/instagram-white.svg"
+                  src="/icons/instagram.svg"
                   alt="Follow us on Instagram"
                   width={25}
                   height={25}
