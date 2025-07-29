@@ -33,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-beige">
+      <body className="bg-beige relative">
         <Header />
         <div className="max-w-[1600px] mx-auto pt-[60px] pb-10 px-5 desktop:px-10">
           {children}

@@ -6,6 +6,7 @@ import CategoryPortfolio from "@/_components/shop-edit/category-portfolio";
 import PortfolioFilter from "@/_components/shop-edit/portfolio-filter";
 
 import categoryData from "@/_data/product-data.json";
+import Image from "next/image";
 
 const { categories } = categoryData;
 
@@ -34,9 +35,29 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-[url(/images/IMG_1243.jpg)] bg-cover bg-[position:50%_100%] h-[500px] absolute w-full max-w-[1600px] left-1/2 -translate-x-1/2 top-0 tablet:h-[600px] tablet:bg-[position:50%_75%] min-[1050px]:bg-[position:50%_75%] min-[1200px]:bg-[position:50%_70%] desktop:bg-[position:50%_65%] desktop:h-[620px] min-[1400px]:h-[750px] min-[1400px]:bg-[position:50%_85%] min-[1500px]:bg-[position:40%_80%] min-[1500px]:h-[780px]" />
-
-      <div className="space-y-15 mt-[400px] tablet:mt-[500px] min-[1400px]:mt-[625px] min-[1500px]:mt-[655px]">
+      <div className="h-[calc(65px+50vw)] phone:h-[calc(90px+50vw)] min-[1400px]:hidden">
+        <div className="w-full h-[calc(65px+50vw)] absolute inset-0 phone:h-[calc(90px+50vw)]">
+          <Image
+            src="/images/IMG_1243.jpg"
+            alt="Heather Hensley Interiors"
+            width={1400}
+            height={1000}
+            className="h-full object-bottom object-cover"
+          />
+        </div>
+      </div>
+      <div className="hidden min-[1400px]:block h-[750px] min-[1400px]:-mt-[60px] min-[1400px]:-mx-10 min-[1400px]:mb-15 min-[1500px]:h-[800px]">
+        <div className="w-full hidden min-[1400px]:block h-[750px] min-[1500px]:h-[800px]">
+          <Image
+            src="/images/IMG_1243.jpg"
+            alt="Heather Hensley Interiors"
+            width={1600}
+            height={1000}
+            className="h-full object-bottom  object-cover min-[1400px]:object-[position:50%_90%] min-[1450px]:object-[position:50%_85%] min-[1500px]:object-[position:50%_90%] min-[1550px]:object-[position:50%_85%] min-[1600px]:object-[position:50%_80%]"
+          />
+        </div>
+      </div>
+      <div className="space-y-15">
         {/* <h2 className="w-full text-light-brown text-center border-b border-light-brown py-10">
           Shop Edit
         </h2> */}

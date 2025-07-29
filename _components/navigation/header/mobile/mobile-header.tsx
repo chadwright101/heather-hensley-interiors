@@ -76,7 +76,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
       {/* Slide-out Menu */}
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-dark-brown/50 transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-dark-brown/95 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           }
@@ -87,8 +87,8 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
             className={classNames({
-              "-mt-5.5": isScrolled,
-              "-mt-3.5": !isScrolled,
+              "mt-0": isScrolled,
+              "mt-2": !isScrolled,
             })}
           >
             <Image
@@ -107,7 +107,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-[20px] text-beige font-normal p-3 -m-3 uppercase"
+                    className="text-[20px] text-beige font-thin p-3 -m-3 uppercase"
                   >
                     {title}
                   </Link>
