@@ -26,7 +26,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
   return (
     <div
       className={classNames(
-        "relative px-7 pt-5 pb-7 desktop:hidden ease-in-out duration-300",
+        "relative px-7 pt-4 pb-6 phone:py-8 desktop:hidden ease-in-out duration-300",
         {
           "bg-dark-brown/90": isScrolled,
         }
@@ -44,12 +44,15 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
           <Image
             src="/logo/heather-hensley-interiors-logo-small.png"
             alt="Heather Hensley Interiors logo"
-            width={150}
+            width={200}
             height={100}
             priority
-            className={classNames("h-auto w-[150px] ease-in-out duration-300", {
-              "scale-90 -translate-y-2 -translate-x-2": isScrolled,
-            })}
+            className={classNames(
+              "h-auto w-[150px] ease-in-out duration-300 phone:w-[200px]",
+              {
+                "scale-90 -translate-y-2 -translate-x-2": isScrolled,
+              }
+            )}
           />
         </Link>
 
@@ -73,7 +76,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
       {/* Slide-out Menu */}
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-dark-brown transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-dark-brown/50 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           }
@@ -84,8 +87,8 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
             className={classNames({
-              "-mt-4.5": isScrolled,
-              "-mt-2.5": !isScrolled,
+              "-mt-5.5": isScrolled,
+              "-mt-3.5": !isScrolled,
             })}
           >
             <Image
@@ -118,7 +121,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/facebook.svg"
+                  src="/icons/facebook-white.svg"
                   alt="Follow us on Facebook"
                   width={25}
                   height={25}
@@ -130,7 +133,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                 className="p-2 -m-2"
               >
                 <Image
-                  src="/icons/instagram.svg"
+                  src="/icons/instagram-white.svg"
                   alt="Follow us on Instagram"
                   width={25}
                   height={25}

@@ -11,7 +11,7 @@ export function MobileFooter() {
         className="h-auto w-2/3 max-w-[400px]"
         quality={60}
       />
-      <h4 className="normal-case font-giuliano-handwriting text-[23px] text-[#d9d2cc]">
+      <h4 className="normal-case font-giuliano-handwriting text-[23px] text-[#d9d2cc] text-center">
         Transforming spaces, transforming lives
       </h4>
     </div>

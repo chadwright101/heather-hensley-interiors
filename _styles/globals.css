@@ -80,10 +80,10 @@
   --color-*: initial;
   --color-black: #231f20;
   --color-grey: #5e5e5e;
-  --color-white: #ffffff;
+  --color-white: #e7e7e3;
   --color-beige: #faf6f1;
   --color-dark-brown: #4b433e;
-  --color-light-brown: #9e7f26;
+  --color-light-brown: #9b6546;
   --color-link-blue: #0000ff;
   --color-transparent: transparent;
 
@@ -92,9 +92,9 @@
 
   --text-*: initial;
   --text-paragraph: 1.125rem;
-  --text-paragraph--font-weight: 400;
+  --text-paragraph--font-weight: 100;
   --text-heading: 1.875rem;
-  --text-heading--font-weight: 200;
+  --text-heading--font-weight: 100;
   --text-heading--line-height: 30px;
 
   --breakpoint-*: initial;

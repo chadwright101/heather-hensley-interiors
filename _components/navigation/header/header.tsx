@@ -14,7 +14,7 @@ export default function Header() {
   const scrollPosition = useScrollPosition();
 
   useEffect(() => {
-    if (scrollPosition > 100) {
+    if (scrollPosition > 50) {
       setIsScrolled(true);
     } else {
       setIsScrolled(false);
@@ -31,7 +31,7 @@ export default function Header() {
         }
       )}
     >
-      <div className="max-w-[1600px] mx-auto relative">
+      <div className="relative">
         <MobileHeader isScrolled={isScrolled} />
         <DesktopHeader isScrolled={isScrolled} />
       </div>

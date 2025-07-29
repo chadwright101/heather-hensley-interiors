@@ -34,13 +34,17 @@ export default function Home() {
 
   return (
     <div>
-      <div className="bg-[url(/images/IMG_1152.jpg)] bg-cover bg-[position:50%_25%] h-[500px] absolute w-full max-w-[1600px] left-1/2 -translate-x-1/2 top-0 tablet:h-[600px] desktop:bg-[position:50%_20%] desktop:h-[620px] min-[1400px]:h-[750px] min-[1400px]:bg-[position:50%_25%] min-[1600px]:h-[780px] min-[1600px]:bg-[position:50%_30%]" />
+      <div className="bg-[url(/images/IMG_1243.jpg)] bg-cover bg-[position:50%_100%] h-[500px] absolute w-full max-w-[1600px] left-1/2 -translate-x-1/2 top-0 tablet:h-[600px] tablet:bg-[position:50%_75%] min-[1050px]:bg-[position:50%_75%] min-[1200px]:bg-[position:50%_70%] desktop:bg-[position:50%_65%] desktop:h-[620px] min-[1400px]:h-[750px] min-[1400px]:bg-[position:50%_85%] min-[1500px]:bg-[position:40%_80%] min-[1500px]:h-[780px]" />
 
-      <div className="space-y-10 mt-[375px] tablet:space-y-5 tablet:mt-[475px] desktop:mt-[650px]">
+      <div className="space-y-15 mt-[400px] tablet:mt-[500px] min-[1400px]:mt-[625px] min-[1500px]:mt-[655px]">
+        {/* <h2 className="w-full text-light-brown text-center border-b border-light-brown py-10">
+          Shop Edit
+        </h2> */}
         <PortfolioFilter
           showCategory={showCategory}
           setShowCategory={handleCategoryChange}
         />
+        <hr className="text-light-brown w-full" />
         <CategoryPortfolio
           key={animationKey}
           categoryData={getCategoryData(showCategory)}

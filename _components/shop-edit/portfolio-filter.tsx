@@ -51,6 +51,11 @@ const PortfolioFilter = ({
           pagination={{
             dynamicBullets: true,
           }}
+          breakpoints={{
+            1000: {
+              spaceBetween: 40,
+            },
+          }}
           style={
             {
               "--swiper-pagination-color": "#9b6546",
@@ -61,7 +66,11 @@ const PortfolioFilter = ({
         >
           {filter.map((category, index) => (
             <SwiperSlide key={index} className="!w-auto">
-              <div className={classNames("flex gap-5 items-center")}>
+              <div
+                className={classNames(
+                  "flex gap-5 items-center min-[1000px]:gap-10"
+                )}
+              >
                 <button
                   onClick={() => handleCategoryClick(category)}
                   className={classNames(
@@ -74,7 +83,7 @@ const PortfolioFilter = ({
                 >
                   <h2
                     className={classNames(
-                      "text-paragraph text-light-brown normal-case text-[16px]",
+                      "text-paragraph text-light-brown normal-case text-paragraph",
                       {
                         "font-semibold": showCategory === category,
                       }
