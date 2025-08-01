@@ -42,7 +42,7 @@ export default function Home() {
             alt="Heather Hensley Interiors"
             width={1400}
             height={1000}
-            className="h-full object-[position:50%_40%] object-cover"
+            className="h-full object-[position:50%_40%] object-cover scale-x-[-1]"
           />
         </div>
       </div>
@@ -53,7 +53,7 @@ export default function Home() {
             alt="Heather Hensley Interiors"
             width={1600}
             height={1000}
-            className="h-full object-[position:50%_40%] object-cover"
+            className="h-full object-[position:50%_40%] object-cover scale-x-[-1]"
           />
         </div>
       </div>
