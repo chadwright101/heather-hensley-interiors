@@ -59,7 +59,7 @@ export default function CategoryPortfolio({ categoryData }: PortfolioProps) {
               />
             </div>
             <div className="p-5 space-y-1 text-center">
-              <h3 className="text-paragraph font-thin normal-case">{name}</h3>
+              <h3 className="text-paragraph font-thin ">{name}</h3>
               <p>Size: {size}</p>
               <p className="text-light-brown font-semibold">
                 R {prices[0].amountExVat.toFixed(2)}

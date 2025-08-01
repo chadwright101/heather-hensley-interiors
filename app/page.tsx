@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 import CategoryPortfolio from "@/_components/shop-edit/category-portfolio";
 import PortfolioFilter from "@/_components/shop-edit/portfolio-filter";
 
 import categoryData from "@/_data/product-data.json";
-import Image from "next/image";
 
 const { categories } = categoryData;
 

@@ -83,9 +83,10 @@ const PortfolioFilter = ({
                 >
                   <h2
                     className={classNames(
-                      "text-paragraph text-light-brown normal-case text-paragraph",
+                      "text-paragraph text-light-brown normal-case desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out",
                       {
-                        "font-semibold": showCategory === category,
+                        "underline underline-offset-8":
+                          showCategory === category,
                       }
                     )}
                   >

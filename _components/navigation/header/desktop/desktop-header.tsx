@@ -15,16 +15,27 @@ export function DesktopHeader({ isScrolled }: HeaderProps) {
         }
       )}
     >
-      <div className="max-w-[1600px] mx-auto px-10 pt-10 pb-8 flex items-center justify-between">
+      <div className="max-w-[1600px] mx-auto px-10 py-5 flex items-center justify-between">
         <Link href="/" className="hover:opacity-90">
-          <Image
-            src="/logo/heather-hensley-interiors-logo-small.png"
-            alt="Heather Hensley Interiors Logo"
-            width={200}
-            height={100}
-            priority
-            className="ease-in-out duration-300 w-[200px] h-auto"
-          />
+          {!isScrolled ? (
+            <Image
+              src="/logo/heather-hensley-interiors-logo-large-white.png"
+              alt="Heather Hensley Interiors Logo"
+              width={200}
+              height={100}
+              priority
+              className="ease-in-out duration-300 w-[200px] h-auto"
+            />
+          ) : (
+            <Image
+              src="/logo/heather-hensley-interiors-logo-large.png"
+              alt="Heather Hensley Interiors Logo"
+              width={200}
+              height={100}
+              priority
+              className="ease-in-out duration-300 w-[200px] h-auto"
+            />
+          )}
         </Link>
 
         <nav>
@@ -50,21 +61,12 @@ export function DesktopHeader({ isScrolled }: HeaderProps) {
               target="_blank"
               className="inline-block desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5"
             >
-              {!isScrolled ? (
-                <Image
-                  src="/icons/facebook-black.svg"
-                  alt="Follow us on Facebook"
-                  width={24}
-                  height={24}
-                />
-              ) : (
-                <Image
-                  src="/icons/facebook-white.svg"
-                  alt="Follow us on Facebook"
-                  width={24}
-                  height={24}
-                />
-              )}
+              <Image
+                src="/icons/facebook-white.svg"
+                alt="Follow us on Facebook"
+                width={24}
+                height={24}
+              />
             </Link>
           </li>
           <li>
@@ -73,21 +75,12 @@ export function DesktopHeader({ isScrolled }: HeaderProps) {
               target="_blank"
               className="inline-block desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 relative"
             >
-              {!isScrolled ? (
-                <Image
-                  src="/icons/instagram-black.svg"
-                  alt="Follow us on Instagram"
-                  width={24}
-                  height={24}
-                />
-              ) : (
-                <Image
-                  src="/icons/instagram-white.svg"
-                  alt="Follow us on Instagram"
-                  width={24}
-                  height={24}
-                />
-              )}
+              <Image
+                src="/icons/instagram-white.svg"
+                alt="Follow us on Instagram"
+                width={24}
+                height={24}
+              />
             </Link>
           </li>
         </ul>
