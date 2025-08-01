@@ -38,29 +38,26 @@ export default function Home() {
       <div className="h-[calc(65px+50vw)] phone:h-[calc(90px+50vw)] min-[1400px]:hidden">
         <div className="w-full h-[calc(65px+50vw)] absolute inset-0 phone:h-[calc(90px+50vw)]">
           <Image
-            src="/images/IMG_1243.jpg"
+            src="/images/IMG_1244.jpg"
             alt="Heather Hensley Interiors"
             width={1400}
             height={1000}
-            className="h-full object-bottom object-cover"
+            className="h-full object-[position:50%_40%] object-cover"
           />
         </div>
       </div>
       <div className="hidden min-[1400px]:block h-[750px] min-[1400px]:-mt-[60px] min-[1400px]:-mx-10 min-[1400px]:mb-15 min-[1500px]:h-[800px]">
         <div className="w-full hidden min-[1400px]:block h-[750px] min-[1500px]:h-[800px]">
           <Image
-            src="/images/IMG_1243.jpg"
+            src="/images/IMG_1244.jpg"
             alt="Heather Hensley Interiors"
             width={1600}
             height={1000}
-            className="h-full object-bottom  object-cover min-[1400px]:object-[position:50%_90%] min-[1450px]:object-[position:50%_85%] min-[1500px]:object-[position:50%_90%] min-[1550px]:object-[position:50%_85%] min-[1600px]:object-[position:50%_80%]"
+            className="h-full object-[position:50%_40%] object-cover"
           />
         </div>
       </div>
       <div className="space-y-15">
-        {/* <h2 className="w-full text-light-brown text-center border-b border-light-brown py-10">
-          Shop Edit
-        </h2> */}
         <PortfolioFilter
           showCategory={showCategory}
           setShowCategory={handleCategoryChange}
