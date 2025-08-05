@@ -38,23 +38,25 @@ export default function Home() {
       <div className="h-[calc(65px+50vw)] phone:h-[calc(90px+50vw)] min-[1400px]:hidden">
         <div className="w-full h-[calc(65px+50vw)] absolute inset-0 phone:h-[calc(90px+50vw)]">
           <Image
-            src="/images/IMG_1244.jpg"
+            src="/images/IMG_1152.jpg"
             alt="Heather Hensley Interiors"
             width={1400}
             height={1000}
-            className="h-full object-[position:50%_40%] object-cover scale-x-[-1]"
+            className="h-full object-[position:50%_10%] object-cover"
           />
         </div>
+        <div className="bg-gradient-to-b from-black/25 to-black/0 absolute inset-0 w-full h-[150px]" />
       </div>
-      <div className="hidden min-[1400px]:block h-[750px] min-[1400px]:-mt-[60px] min-[1400px]:-mx-10 min-[1400px]:mb-15 min-[1500px]:h-[800px]">
+      <div className="hidden min-[1400px]:block h-[750px] min-[1400px]:-mt-[60px] min-[1400px]:-mx-10 min-[1400px]:mb-15 min-[1500px]:h-[800px] relative">
         <div className="w-full hidden min-[1400px]:block h-[750px] min-[1500px]:h-[800px]">
           <Image
-            src="/images/IMG_1244.jpg"
+            src="/images/IMG_1152.jpg"
             alt="Heather Hensley Interiors"
             width={1600}
             height={1000}
-            className="h-full object-[position:50%_40%] object-cover scale-x-[-1]"
+            className="h-full object-[position:50%_30%] object-cover"
           />
+          <div className="bg-gradient-to-b from-black/25 to-black/0 absolute inset-0 w-full h-[200px]" />
         </div>
       </div>
       <div className="space-y-15">
