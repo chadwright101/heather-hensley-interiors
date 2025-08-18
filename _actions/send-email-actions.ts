@@ -9,6 +9,7 @@ interface EmailTemplateData {
   email: string;
   phone: string;
   message: string;
+  product: string;
 }
 
 interface MailOptions {
@@ -30,12 +31,16 @@ export async function sendEmail(formData: FormData): Promise<void> {
       const message = DOMPurify.sanitize(
         formData.get("message")?.toString() || ""
       );
+      const product = DOMPurify.sanitize(
+        formData.get("product")?.toString() || ""
+      );
 
       const emailHtmlContent = emailTemplate({
         name,
         email,
         phone,
         message,
+        product,
       } as EmailTemplateData);
 
       const transporter = nodemailer.createTransport({
@@ -52,7 +57,7 @@ export async function sendEmail(formData: FormData): Promise<void> {
       const mailOptions: MailOptions = {
         from: process.env.SMTP_USER as string,
         to: process.env.SMTP_SEND_TO as string,
-        subject: "Website form submission - Heather Hensley Interiors",
+        subject: `Website product enquiry - ${product}`,
         replyTo: email,
         html: emailHtmlContent,
       };

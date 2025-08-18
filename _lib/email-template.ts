@@ -3,6 +3,7 @@ interface EmailTemplateProps {
   email: string;
   phone?: string;
   message: string;
+  product: string;
 }
 
 export const emailTemplate = ({
@@ -10,6 +11,7 @@ export const emailTemplate = ({
   email,
   phone,
   message,
+  product,
 }: EmailTemplateProps) => {
   return `<html lang="en">
   <head>
@@ -29,8 +31,8 @@ export const emailTemplate = ({
     <table style="width: 100%; padding: 1rem;">
       <tr>
         <td>
-          <h3 style="font-size: 1.25rem">Website form submission</h3>
-          <p style="font-size: 1rem; margin-top: 1rem; font-weight: 500;">
+          <h3 style="font-size: 1.25rem font-weight: 500;">Product Enquiry for <span style="font-size: 1.25rem font-weight: 600;">${product}</span></h3>
+          <p style="font-size: 1rem; font-weight: 500;">
             Name: <span style="font-weight: 200; font-style: italic;">${name}</span>
           </p>
           <p style="font-size: 1rem; font-weight: 500;">

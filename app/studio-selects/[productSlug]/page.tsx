@@ -14,7 +14,6 @@ interface ProductPageProps {
   };
 }
 
-// Extract the product type from ProductProps
 type Product = ProductProps["categoryData"][0];
 
 function findProductBySlug(
@@ -122,9 +121,16 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
         <div
           id={product.name.toLowerCase().replace(/\s+/g, "-")}
-          className="-translate-y-10 desktop:-translate-y-[150px]"
+          className="-translate-y-10 -mt-10 desktop:-translate-y-[150px]"
         ></div>
-        <ProductEnquiryForm productName={product.name} />
+        <div
+          id="contact"
+          className="-translate-y-10 -mt-10 desktop:-translate-y-[150px]"
+        ></div>
+        <ProductEnquiryForm
+          productName={product.name}
+          category={product.category}
+        />
       </div>
     </div>
   );

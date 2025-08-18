@@ -23,7 +23,7 @@ export default function Home() {
     const mapping: { [key: string]: string } = {
       Scatters: "scatters",
       Ottomans: "ottomans",
-      "Bedside pedestals": "bedside pedestals",
+      "Bedside Pedestals": "bedsidePedestals",
       Cabinets: "cabinets",
       Headboards: "headboards",
     };

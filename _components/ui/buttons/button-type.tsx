@@ -20,7 +20,7 @@ const ButtonType = ({
     >
       {pending && type === "submit" ? (
         <div className="py-[1.5px]">
-          <div className="spinner-submit"></div>
+          <div className="spinner place-self-center"></div>
         </div>
       ) : (
         <>{children}</>
