@@ -18,7 +18,7 @@ const ProductEnquiryForm = ({
   category,
 }: ProductEnquiryFormProps) => {
   const [submissionStartTime, setSubmissionStartTime] = useState(0);
-  const [validateRecaptcha, setValidateRecaptcha] = useState(true);
+  const [validateRecaptcha, setValidateRecaptcha] = useState(false);
   const [showEmailSubmitted, setShowEmailSubmitted] = useState(false);
 
   useEffect(() => {
