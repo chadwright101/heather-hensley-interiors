@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import Image from "next/image";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Thumbs } from "swiper/modules";
+import classNames from "classnames";
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -29,26 +31,44 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
         thumbs={{
           swiper: thumbsSwiper && !thumbsSwiper.destroyed ? thumbsSwiper : null,
         }}
-        spaceBetween={0}
+        spaceBetween={20}
         slidesPerView={1}
+        loop
+        breakpoints={{
+          700: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1280: {
+            slidesPerView: 1,
+            pagination: false,
+          },
+        }}
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full aspect-square rounded-[6px] overflow-hidden mb-8 desktop:aspect-[3.6/4]">
+            <div className="w-full aspect-square rounded-[6px] overflow-hidden mb-8 desktop:aspect-[3.6/4] desktop:mb-5">
               <Image
                 src={image}
                 alt={`${productName} view ${index + 1}`}
-                width={800}
-                height={343}
+                width={700}
+                height={1000}
                 className="h-full w-full object-cover"
                 priority={index === 0}
+                sizes="(max-width: 700px) 100vw, (min-width: 700px) 50vw, 650px"
               />
             </div>
           </SwiperSlide>
         ))}
       </Swiper>
-      {/* thumbnail */}
-      <div className="hidden desktop:block w-full">
+
+      {/* thumbnail slider */}
+      <div
+        className={classNames("hidden desktop:block w-full relative", {
+          "px-10": images.length > 6,
+          "px-0": images.length <= 6,
+        })}
+      >
         <Swiper
           onSwiper={setThumbsSwiper}
           modules={[Navigation]}
@@ -59,55 +79,60 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
           spaceBetween={20}
           slidesPerView={6}
           watchSlidesProgress={true}
+          loop
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} className="cursor-pointer">
-              <div className="w-full h-[110px] rounded-[6px] overflow-hidden">
+              <div
+                className={classNames("w-full rounded-[6px] overflow-hidden", {
+                  "h-[90px]": images.length > 6,
+                  "h-[110px]": images.length <= 6,
+                })}
+              >
                 <Image
                   src={image}
                   alt={`${productName} thumbnail ${index + 1}`}
-                  width={91}
-                  height={120}
+                  width={100}
+                  height={110}
                   className="h-full w-full object-cover ease-in-out duration-300 desktop:hover:scale-105"
                 />
               </div>
             </SwiperSlide>
           ))}
-
-          {/* navigation */}
-          <div>
-            <div className="swiper-button-prev-custom absolute left-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-light-brown/80 hover:bg-light-brown rounded-full flex items-center justify-center cursor-pointer transition-all duration-200 -ml-4">
-              <svg
-                className="w-4 h-4 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M15 19l-7-7 7-7"
-                />
-              </svg>
-            </div>
-            <div className="swiper-button-next-custom absolute right-0 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-light-brown/80 hover:bg-light-brown rounded-full flex items-center justify-center cursor-pointer transition-all duration-200 -mr-4">
-              <svg
-                className="w-4 h-4 text-white"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9 5l7 7-7 7"
-                />
-              </svg>
-            </div>
-          </div>
         </Swiper>
+        {/* navigation */}
+        <div>
+          <div className="swiper-button-prev-custom absolute left-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/75 hover:bg-light-brown/75 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-300">
+            <svg
+              className="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M15 19l-7-7 7-7"
+              />
+            </svg>
+          </div>
+          <div className="swiper-button-next-custom absolute right-4 top-1/2 -translate-y-1/2 z-10 w-8 h-8 bg-white/75 hover:bg-light-brown/75 rounded-xl flex items-center justify-center cursor-pointer transition-all duration-300">
+            <svg
+              className="w-5 h-5 text-white"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   );
