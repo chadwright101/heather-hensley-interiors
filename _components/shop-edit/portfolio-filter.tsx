@@ -56,13 +56,6 @@ const PortfolioFilter = ({
               spaceBetween: 40,
             },
           }}
-          style={
-            {
-              "--swiper-pagination-color": "#9b6546",
-              "--swiper-pagination-bullet-inactive-color": "#4B433E",
-              "--swiper-pagination-bullet-inactive-opacity": "0.8",
-            } as React.CSSProperties
-          }
         >
           {filter.map((category, index) => (
             <SwiperSlide key={index} className="!w-auto">
@@ -83,9 +76,9 @@ const PortfolioFilter = ({
                 >
                   <h2
                     className={classNames(
-                      "text-paragraph text-light-brown normal-case desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out",
+                      "text-[16px] text-light-brown normal-case desktop:text-paragraph desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out",
                       {
-                        "underline underline-offset-8":
+                        "underline underline-offset-[6px]":
                           showCategory === category,
                       }
                     )}

@@ -35,8 +35,8 @@ export default function Home() {
 
   return (
     <div>
-      <div className="h-[calc(65px+50vw)] phone:h-[calc(90px+50vw)] min-[1400px]:hidden">
-        <div className="w-full h-[calc(65px+50vw)] absolute inset-0 phone:h-[calc(90px+50vw)]">
+      <div className="h-[calc(100px+50vw)] min-[325px]:h-[calc(80px+50vw)] min-[380px]:h-[calc(80px+45vw)] phone:h-[calc(250px+20vw)] min-[1400px]:hidden">
+        <div className="w-full h-[calc(100px+50vw)] min-[325px]:h-[calc(80px+50vw)] min-[380px]:h-[calc(80px+45vw)] absolute inset-0 phone:h-[calc(250px+20vw)]">
           <Image
             src="/images/IMG_1152.jpg"
             alt="Heather Hensley Interiors"
@@ -45,7 +45,7 @@ export default function Home() {
             className="h-full object-[position:50%_10%] object-cover"
           />
         </div>
-        <div className="bg-gradient-to-b from-black/25 to-black/0 absolute inset-0 w-full h-[150px]" />
+        <div className="bg-gradient-to-t from-black/0 to-25% to-black/25 absolute inset-0 w-full h-[calc(100px+50vw)] min-[325px]:h-[calc(80px+50vw)] min-[380px]:h-[calc(80px+45vw)] phone:h-[calc(60px+50vw)]" />
       </div>
       <div className="hidden min-[1400px]:block h-[750px] min-[1400px]:-mt-[60px] min-[1400px]:-mx-10 min-[1400px]:mb-15 min-[1500px]:h-[800px] relative">
         <div className="w-full hidden min-[1400px]:block h-[750px] min-[1500px]:h-[800px]">
@@ -56,7 +56,7 @@ export default function Home() {
             height={1000}
             className="h-full object-[position:50%_30%] object-cover"
           />
-          <div className="bg-gradient-to-b from-black/25 to-black/0 absolute inset-0 w-full h-[200px]" />
+          <div className="bg-gradient-to-b from-black/25 to-black/0 absolute inset-0 w-full h-[300px]" />
         </div>
       </div>
       <div className="space-y-15">

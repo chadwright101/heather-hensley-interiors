@@ -78,12 +78,12 @@
 
 @theme {
   --color-*: initial;
-  --color-black: #231f20;
-  --color-grey: #5e5e5e;
-  --color-white: #e7e7e3;
-  --color-beige: #faf6f1;
-  --color-dark-brown: #4b433e;
-  --color-light-brown: #9b6546;
+  --color-black: #4B433E;
+  --color-grey: #D9D2CC;
+  --color-light-grey: #E7E7E3;
+  --color-white: #FFFFFF;
+  --color-beige: #FAF6F1;
+  --color-light-brown: #9B6546;
   --color-link-blue: #0000ff;
   --color-transparent: transparent;
 
@@ -171,9 +171,9 @@
 /* swiper styles */
 
 :root {
-  --swiper-pagination-color: #4B433E;
-  --swiper-pagination-bullet-inactive-color: #4B433E;
-  --swiper-pagination-bullet-inactive-opacity: 0.5;
+  --swiper-pagination-color: #9B6546;
+  --swiper-pagination-bullet-inactive-color: #9B6546;
+  --swiper-pagination-bullet-inactive-opacity: 0.8;
   --swiper-pagination-bullet-size: 8px;
   --swiper-pagination-bullet-horizontal-gap: 4px;
 }
