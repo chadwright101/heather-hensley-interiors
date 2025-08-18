@@ -9,9 +9,9 @@ import ProductEnquiryForm from "@/_components/shop-edit/product-page/product-enq
 import ButtonLink from "@/_components/ui/buttons/button-link";
 
 interface ProductPageProps {
-  params: {
+  params: Promise<{
     productSlug: string;
-  };
+  }>;
 }
 
 type Product = ProductProps["categoryData"][0];
