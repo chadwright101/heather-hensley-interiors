@@ -1,3 +1,7 @@
+"use client";
+
+import ButtonType from "@/_components/ui/buttons/button-type";
+
 interface ProductEnquiryFormProps {
   productName: string;
 }
@@ -37,14 +41,9 @@ const ProductEnquiryForm = ({ productName }: ProductEnquiryFormProps) => {
           className="bg-beige px-2 py-4 rounded-md w-full text-dark-brown text-[18px] font-thin tracking-[0.18px] placeholder:text-dark-brown resize-none"
         />
 
-        <button
-          type="submit"
-          className="bg-light-brown flex flex-row gap-1 items-center justify-center px-0 py-3 rounded-md w-full"
-        >
-          <span className="text-white text-[18px] font-light uppercase">
-            Send
-          </span>
-        </button>
+        <ButtonType type="submit" cssClasses="desktop:place-self-start">
+          Submit
+        </ButtonType>
       </form>
     </div>
   );

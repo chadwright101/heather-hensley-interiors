@@ -17,7 +17,7 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
     <div className="grid grid-cols-1 gap-10 min-[600px]:grid-cols-2 min-[1000px]:grid-cols-3 tablet:gap-y-[60px] desktop:grid-cols-4">
       {categoryData.map(({ images, name, prices, size, inStock }, index) => (
         <Link
-          href={`/heathers-edit/${name.toLowerCase().replace(/\s+/g, "-")}`}
+          href={`/studio-selects/${name.toLowerCase().replace(/\s+/g, "-")}`}
           aria-label={name}
           key={index}
         >

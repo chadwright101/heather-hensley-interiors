@@ -1,6 +1,6 @@
 import { useFormStatus } from "react-dom";
 import { ButtonProps } from "@/_types/button-types";
-import { buttonStyles } from "@/_lib/utils/button-styles";
+import { buttonStyles } from "@/_styles/button-styles";
 
 const ButtonType = ({
   children,

@@ -6,6 +6,7 @@ import productData from "@/_data/product-data.json";
 import ProductSlider from "@/_components/shop-edit/product-page/product-slider";
 import { ProductProps } from "@/_types/general-types";
 import ProductEnquiryForm from "@/_components/shop-edit/product-page/product-enquiry-form";
+import ButtonLink from "@/_components/ui/buttons/button-link";
 
 interface ProductPageProps {
   params: {
@@ -112,12 +113,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
             ))}
           </div>
-          <button className="bg-light-brown flex flex-row gap-1 items-center justify-center px-0 py-3 rounded-md w-full">
-            <span className="text-white text-[18px] font-light uppercase">
-              Enquire Now
-            </span>
-          </button>
+          <ButtonLink
+            href={`#${product.name.toLowerCase().replace(/\s+/g, "-")}`}
+            cssClasses="w-full desktop:w-auto"
+          >
+            Enquire now
+          </ButtonLink>
         </div>
+        <div
+          id={product.name.toLowerCase().replace(/\s+/g, "-")}
+          className="-translate-y-10 desktop:-translate-y-[150px]"
+        ></div>
         <ProductEnquiryForm productName={product.name} />
       </div>
     </div>
