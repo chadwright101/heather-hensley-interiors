@@ -1,0 +1,125 @@
+import { notFound } from "next/navigation";
+import Link from "next/link";
+import { Metadata } from "next";
+
+import productData from "@/_data/product-data.json";
+import ProductSlider from "@/_components/shop-edit/product-page/product-slider";
+import { ProductProps } from "@/_types/general-types";
+import ProductEnquiryForm from "@/_components/shop-edit/product-page/product-enquiry-form";
+
+interface ProductPageProps {
+  params: {
+    productSlug: string;
+  };
+}
+
+// Extract the product type from ProductProps
+type Product = ProductProps["categoryData"][0];
+
+function findProductBySlug(
+  productSlug: string
+): { product: Product; category: string } | null {
+  const { categories } = productData;
+
+  const productName = productSlug
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (l) => l.toUpperCase());
+
+  for (const categoryKey in categories) {
+    const category = categories[categoryKey as keyof typeof categories];
+    const product = category.find(
+      (item) => item.name.toLowerCase() === productName.toLowerCase()
+    );
+
+    if (product) {
+      return {
+        product: product as Product,
+        category: categoryKey,
+      };
+    }
+  }
+
+  return null;
+}
+
+export async function generateMetadata({
+  params,
+}: ProductPageProps): Promise<Metadata> {
+  const resolvedParams = await params;
+  const result = findProductBySlug(resolvedParams.productSlug);
+
+  if (!result) {
+    return {
+      title: "Product Not Found",
+    };
+  }
+
+  const { product } = result;
+
+  return {
+    title: `${product.name} - Heather Hensley Interiors`,
+    description: product.description.join(" "),
+    openGraph: {
+      title: `${product.name} - Heather Hensley Interiors`,
+      description: product.description.join(" "),
+      images: product.images.length > 0 ? [product.images[0]] : [],
+    },
+  };
+}
+
+export default async function ProductPage({ params }: ProductPageProps) {
+  const resolvedParams = await params;
+  const result = findProductBySlug(resolvedParams.productSlug);
+
+  if (!result) {
+    notFound();
+  }
+
+  const { product } = result;
+
+  return (
+    <div className="flex flex-col gap-10 justify-start px-5 desktop:grid grid-cols-[600px_1fr]">
+      <Link
+        href="/"
+        className="text-light-brown p-2 -m-2 place-self-start text-left text-paragraph font-light desktop:col-span-2 desktop:p-0 desktop:m-0 inline-block desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5"
+      >
+        ← Back to Shop
+      </Link>
+      <ProductSlider images={product.images} productName={product.name} />
+      <div className="flex flex-col gap-10 items-center justify-start w-full">
+        <div className="flex flex-col gap-5 items-start justify-start border-b border-light-brown pb-10 w-full">
+          <h1 className="text-light-brown text-[30px] font-thin leading-[36px] uppercase w-full">
+            {product.name}
+          </h1>
+          <p className="text-light-brown text-[18px] font-semibold">
+            R {product.prices[0].amountExVat.toFixed(2)}
+          </p>
+          <p className="text-light-brown text-[18px] font-thin w-full">
+            {product.category}
+          </p>
+          <p className="text-light-brown text-[18px] font-thin">
+            Size: {product.size}
+          </p>
+          {!product.inStock && (
+            <p className="text-[18px] text-black/50 font-semibold uppercase">
+              Sold out
+            </p>
+          )}
+          <div className="text-light-brown text-[18px] font-thin leading-[24px] text-justify w-full">
+            {product.description.map((paragraph, index) => (
+              <p key={index} className="mb-2 last:mb-0">
+                {paragraph}
+              </p>
+            ))}
+          </div>
+          <button className="bg-light-brown flex flex-row gap-1 items-center justify-center px-0 py-3 rounded-md w-full">
+            <span className="text-white text-[18px] font-light uppercase">
+              Enquire Now
+            </span>
+          </button>
+        </div>
+        <ProductEnquiryForm productName={product.name} />
+      </div>
+    </div>
+  );
+}

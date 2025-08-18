@@ -2,15 +2,17 @@
   "filter": [
     "Scatters",
     "Ottomans",
-    "Bedside pedestals",
+    "Bedside Pedestals",
     "Cabinets",
     "Headboards"
   ],
   "categories": {
     "scatters": [
       {
-        "name": "Ardmore Leopard print",
+        "name": "Ardmore Leopard Print",
         "size": "50cm x 70cm",
+        "inStock": false,
+        "category": "Scatter Cushion",
         "description": [
           "Fronts of cushion covers in Ardmore animal print backed and piped in a lovely Tangerine colour fabric.",
           "Option to be supplied with or without a down inner."
@@ -40,6 +42,8 @@
       {
         "name": "Quilted Blush",
         "size": "60cm x 60cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
         "description": [
           "Quiet tone, soft texture. Our scatter collection is curated to layer. This subtle dusty pink is available now."
         ],
@@ -61,6 +65,8 @@
       {
         "name": "Aqua Bliss",
         "size": "60cm x 60cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
         "description": [
           "Aqua scatter cushions with some spice. Piping in Tangerine.",
           "Supplied with or without a down inner."
@@ -90,6 +96,8 @@
       {
         "name": "Classic Velvet Ottoman",
         "size": "120cm x 45cm x 45cm",
+        "inStock": true,
+        "category": "Ottomans",
         "description": [
           "Upholstered in luxurious velvet with deep button tufting.",
           "Solid wood legs for durability."
@@ -110,6 +118,8 @@
       {
         "name": "Storage Ottoman",
         "size": "100cm x 40cm x 40cm",
+        "inStock": true,
+        "category": "Ottomans",
         "description": [
           "Features a lift-up lid for convenient storage.",
           "Upholstered in durable linen fabric."
@@ -130,6 +140,8 @@
       {
         "name": "Round Pouf Ottoman",
         "size": "60cm diameter x 40cm height",
+        "inStock": true,
+        "category": "Ottomans",
         "description": [
           "Soft round pouf, perfect for extra seating or as a footrest.",
           "Available in multiple colors."
@@ -145,10 +157,12 @@
         "quantity": 5
       }
     ],
-    "bedside pedestals": [
+    "bedsidePedestals": [
       {
         "name": "Modern Oak Pedestal",
         "size": "50cm x 40cm x 60cm",
+        "inStock": true,
+        "category": "Bedside Pedestals",
         "description": [
           "Crafted from solid oak with a natural finish.",
           "Single drawer and open shelf for storage."
@@ -169,6 +183,8 @@
       {
         "name": "White Minimalist Pedestal",
         "size": "45cm x 35cm x 55cm",
+        "inStock": true,
+        "category": "Bedside Pedestals",
         "description": [
           "Sleek white finish with push-to-open drawer.",
           "Perfect for modern bedrooms."
@@ -186,6 +202,8 @@
       {
         "name": "Vintage Pedestal",
         "size": "55cm x 38cm x 60cm",
+        "inStock": true,
+        "category": "Bedside Pedestals",
         "description": [
           "Distressed wood finish for a vintage look.",
           "Two drawers with antique brass handles."
@@ -208,6 +226,8 @@
       {
         "name": "Glass Display Cabinet",
         "size": "90cm x 40cm x 180cm",
+        "inStock": true,
+        "category": "Cabinets",
         "description": [
           "Tall cabinet with glass doors and shelves.",
           "Ideal for displaying decor or collectibles."
@@ -225,6 +245,8 @@
       {
         "name": "Rustic Sideboard",
         "size": "150cm x 45cm x 85cm",
+        "inStock": true,
+        "category": "Cabinets",
         "description": [
           "Rustic wood finish with three drawers and two cabinets.",
           "Perfect for dining or living rooms."
@@ -245,6 +267,8 @@
       {
         "name": "Compact Shoe Cabinet",
         "size": "80cm x 35cm x 100cm",
+        "inStock": true,
+        "category": "Cabinets",
         "description": [
           "Slim cabinet with multiple shelves for shoe storage.",
           "White lacquered finish."
@@ -264,6 +288,8 @@
       {
         "name": "Upholstered Headboard",
         "size": "Queen: 160cm x 120cm",
+        "inStock": true,
+        "category": "Headboards",
         "description": [
           "Padded and upholstered in soft grey fabric.",
           "Wall-mount or bed-frame compatible."
@@ -281,6 +307,8 @@
       {
         "name": "Wooden Slat Headboard",
         "size": "King: 190cm x 110cm",
+        "inStock": true,
+        "category": "Headboards",
         "description": [
           "Natural wood slats for a minimalist look.",
           "Easy to install and maintain."
@@ -301,6 +329,8 @@
       {
         "name": "Button-Tufted Headboard",
         "size": "Double: 140cm x 115cm",
+        "inStock": true,
+        "category": "Headboards",
         "description": [
           "Elegant button-tufted design in navy blue fabric.",
           "Adds a touch of luxury to any bedroom."
