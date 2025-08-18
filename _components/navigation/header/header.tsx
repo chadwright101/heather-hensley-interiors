@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 import classNames from "classnames";
 
@@ -12,6 +13,7 @@ import { DesktopHeader } from "./desktop/desktop-header";
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const scrollPosition = useScrollPosition();
+  const pathname = usePathname();
 
   useEffect(() => {
     if (scrollPosition > 50) {
@@ -24,16 +26,17 @@ export default function Header() {
   return (
     <header
       className={classNames(
-        "fixed w-full left-0 mx-auto z-50 ease-in-out duration-300 overflow-y-hidden",
+        "w-full mx-auto z-50 ease-in-out duration-300 overflow-y-hidden",
         {
-          "-top-3 min-[1000px]:top-0": isScrolled,
-          "top-0": !isScrolled,
+          "absolute desktop:fixed left-0": pathname === "/",
+          "bg-black/90 desktop:sticky desktop:top-0": pathname !== "/",
+          "desktop:bg-black/[89%]": pathname === "/" && isScrolled,
         }
       )}
     >
       <div className="relative">
-        <MobileHeader isScrolled={isScrolled} />
-        <DesktopHeader isScrolled={isScrolled} />
+        <MobileHeader />
+        <DesktopHeader isScrolled={isScrolled} pathname={pathname} />
       </div>
     </header>
   );

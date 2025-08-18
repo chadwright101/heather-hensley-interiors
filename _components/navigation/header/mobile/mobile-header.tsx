@@ -4,11 +4,13 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import navData from "@/_data/nav-data.json";
 import classNames from "classnames";
-import { HeaderProps } from "@/_types/general-types";
 
-export function MobileHeader({ isScrolled }: HeaderProps) {
+import SocialButtons from "@/_components/ui/social/social-buttons";
+
+import navData from "@/_data/nav-data.json";
+
+export function MobileHeader() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -24,59 +26,41 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
   }, [isOpen]);
 
   return (
-    <div
-      className={classNames(
-        "relative px-7 pt-4 pb-6 phone:py-8 desktop:hidden ease-in-out duration-300",
-        {
-          "bg-dark-brown/90": isScrolled,
-        }
-      )}
-    >
-      <div
-        className={classNames(
-          "flex w-full items-center justify-between ease-in-out duration-300",
-          {
-            "translate-y-3.5": isScrolled,
-          }
-        )}
-      >
-        <Link href="/" className="flex gap-1 items-center translate-y-2">
-          <Image
-            src="/logo/heather-hensley-interiors-logo-small.png"
-            alt="Heather Hensley Interiors logo"
-            width={200}
-            height={100}
-            priority
-            className={classNames(
-              "h-auto w-[150px] ease-in-out duration-300 phone:w-[200px]",
-              {
-                "scale-90 -translate-y-2 -translate-x-2": isScrolled,
-              }
-            )}
-          />
-        </Link>
+    <div className="relative px-5 pt-6 pb-5 phone:py-8 desktop:hidden ease-in-out duration-300">
+      <div className="flex flex-col gap-10 items-center">
+        <div className="flex flex-col gap-5 w-full items-center ease-in-out duration-300">
+          <Link href="/" className="flex gap-1 items-center translate-y-2">
+            <Image
+              src="/logo/heather-hensley-interiors-logo-white.png"
+              alt="Heather Hensley Interiors logo"
+              width={190}
+              height={105}
+              priority
+              className="h-auto w-[150px] ease-in-out duration-300 phone:w-[190px]"
+            />
+          </Link>
 
-        <button
-          onClick={() => setIsOpen(true)}
-          className={classNames("ease-in-out duration-300 -m-3 p-3", {
-            "-translate-y-1.5": isScrolled,
-            "translate-y-1 ": !isScrolled,
-          })}
-          aria-label="Open menu"
-        >
-          <Image
-            src="/icons/menu-open.svg"
-            alt="Open menu"
-            width={25}
-            height={25}
-          />
-        </button>
+          <button
+            onClick={() => setIsOpen(true)}
+            className="cursor-pointer w-full -m-3 p-3"
+            aria-label="Open menu"
+          >
+            <Image
+              src="/icons/menu-open.svg"
+              alt="Open menu"
+              width={25}
+              height={25}
+              className="mx-auto"
+            />
+          </button>
+        </div>
+        <SocialButtons />
       </div>
 
       {/* Slide-out Menu */}
       <div
         className={classNames(
-          "fixed inset-0 z-50 transform bg-dark-brown/95 transition-transform duration-300 ease-in-out",
+          "fixed inset-0 z-50 transform bg-black/95 transition-transform duration-300 ease-in-out",
           {
             "translate-x-full": !isOpen,
           }
@@ -86,10 +70,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
           <button
             onClick={() => setIsOpen(false)}
             aria-label="Close menu"
-            className={classNames({
-              "mt-0": isScrolled,
-              "mt-2": !isScrolled,
-            })}
+            className="p-2 -m-2 cursor-pointer"
           >
             <Image
               src="/icons/menu-close.svg"
@@ -107,7 +88,7 @@ export function MobileHeader({ isScrolled }: HeaderProps) {
                   <Link
                     href={url}
                     onClick={() => setIsOpen(false)}
-                    className="text-[20px] text-beige font-thin p-3 -m-3 uppercase"
+                    className="text-[20px] text-light-grey font-thin p-3 -m-3 uppercase"
                   >
                     {title}
                   </Link>
