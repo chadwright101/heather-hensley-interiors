@@ -1,12 +1,17 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
+import Image from "next/image";
 
-import productData from "@/_data/product-data.json";
 import ProductSlider from "@/_components/shop-edit/product-page/product-slider";
-import { ProductProps } from "@/_types/general-types";
 import ProductEnquiryForm from "@/_components/shop-edit/product-page/product-enquiry-form";
 import ButtonLink from "@/_components/ui/buttons/button-link";
+import ShowEmailAddress from "@/_components/ui/contact/show-email-address";
+import ShowPhoneNumber from "@/_components/ui/contact/show-phone-number";
+
+import { ProductProps } from "@/_types/general-types";
+
+import productData from "@/_data/product-data.json";
 
 interface ProductPageProps {
   params: Promise<{
@@ -87,13 +92,27 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </Link>
       <ProductSlider images={product.images} productName={product.name} />
       <div className="flex flex-col gap-10 items-center justify-start w-full">
-        <div className="flex flex-col gap-5 items-start justify-start border-b border-light-brown pb-10 w-full">
-          <h1 className="text-light-brown text-[30px] font-thin leading-[36px] uppercase w-full">
-            {product.name}
-          </h1>
-          <p className="text-light-brown text-[18px] font-semibold">
-            R {product.prices[0].amountExVat.toFixed(2)}
-          </p>
+        <div className="flex flex-col gap-5 items-start justify-start w-full">
+          <div className="flex flex-col gap-1 w-full">
+            <h2 className="text-light-brown text-[30px] font-thin leading-[36px] uppercase w-full">
+              {product.name}
+            </h2>
+            <h3 className="text-paragraph normal-case">{product.nameNote}</h3>
+          </div>
+          <div className="flex flex-col gap-2 w-full">
+            {product.prices[0].amountExVat != null && (
+              <p className="text-light-brown text-[18px] font-semibold">
+                R {product.prices[0].amountExVat.toFixed(2)}{" "}
+                <span className="font-light">ex. VAT</span>
+              </p>
+            )}
+            {product.prices[0].amountInclVat != null && (
+              <p className="text-light-brown text-[18px] font-semibold">
+                R {product.prices[0].amountInclVat.toFixed(2)}{" "}
+                <span className="font-light">incl. VAT</span>
+              </p>
+            )}
+          </div>
           <p className="text-light-brown text-[18px] font-thin w-full">
             {product.category}
           </p>
@@ -112,25 +131,49 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
             ))}
           </div>
-          <ButtonLink
+          <div className="flex flex-col gap-5 pt-5 w-full border-t border-light-brown">
+            <p className="font-bold">
+              For enquiries, please reach out to us over WhatsApp, phone call or
+              email.
+            </p>
+            <ul className="flex flex-col gap-5">
+              <li className="inline-block mr-auto transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5">
+                <Link href="https://wa.me/qr/55ZUDOX422YJJ1" target="_blank">
+                  <Image
+                    src="/icons/whatsapp.svg"
+                    alt="WhatsApp Icon"
+                    width={24}
+                    height={24}
+                  />
+                </Link>
+              </li>
+              <li className="inline-block mr-auto transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5">
+                <ShowEmailAddress />
+              </li>
+              <li className="inline-block mr-auto transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5">
+                <ShowPhoneNumber />
+              </li>
+            </ul>
+          </div>
+          {/* <ButtonLink
             href={`#${product.name.toLowerCase().replace(/\s+/g, "-")}`}
             cssClasses="w-full desktop:w-auto"
           >
             Enquire now
-          </ButtonLink>
+          </ButtonLink> */}
         </div>
-        <div
+        {/* <div
           id={product.name.toLowerCase().replace(/\s+/g, "-")}
           className="-translate-y-10 -mt-10 desktop:-translate-y-[150px]"
-        ></div>
-        <div
+        ></div> */}
+        {/* <div
           id="contact"
           className="-translate-y-10 -mt-10 desktop:-translate-y-[150px]"
-        ></div>
-        <ProductEnquiryForm
+        ></div> */}
+        {/* <ProductEnquiryForm
           productName={product.name}
           category={product.category}
-        />
+        /> */}
       </div>
     </div>
   );
