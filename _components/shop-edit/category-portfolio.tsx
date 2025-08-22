@@ -47,9 +47,15 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
               <h3 className="text-paragraph font-thin">{name}</h3>
               <p>Size: {size}</p>
               <div className="flex items-center justify-between">
-                <p className="text-light-brown font-semibold">
-                  R {prices[0].amountExVat.toFixed(2)}
-                </p>
+                {prices[0].amountExVat != null ? (
+                  <p className="text-light-brown font-semibold">
+                    R {prices[0].amountExVat.toFixed(2)}
+                  </p>
+                ) : (
+                  <p className="text-light-brown font-semibold">
+                    R {prices[0].amountInclVat.toFixed(2)}
+                  </p>
+                )}
                 {!inStock && (
                   <p className="uppercase font-semibold text-black/50">
                     Sold out

@@ -1,43 +1,283 @@
 {
-  "filter": [
-    "Scatters",
-    "Ottomans",
-    "Bedside Pedestals",
-    "Cabinets",
-    "Headboards"
-  ],
+  "filter": ["Scatters"],
   "categories": {
     "scatters": [
       {
-        "name": "Ardmore Leopard Print",
-        "size": "50cm x 70cm",
-        "inStock": false,
+        "name": "Canvas Stripe",
+        "nameNote": "With a linen back",
+        "size": "65cm x 65cm",
+        "inStock": true,
         "category": "Scatter Cushion",
-        "description": [
-          "Fronts of cushion covers in Ardmore animal print backed and piped in a lovely Tangerine colour fabric.",
-          "Option to be supplied with or without a down inner."
-        ],
+        "description": [""],
         "prices": [
           {
             "name": "Cushion cover",
-            "amountExVat": 722.13,
-            "amountInclVat": 830.45
+            "amountInclVat": 650
           },
           {
-            "name": "Down inner",
-            "amountExVat": 343.48,
+            "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55cm x 75cm down inner is required"
+            "note": "70cm x 70cm"
           }
         ],
         "images": [
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-1.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-2.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-3.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-4.jpg",
-          "/images/products/scatters/ardmore-animal-print/ardmore-animal-print-5.jpg"
+          "/images/products/scatters/canvas-stripe/canvas-stripe-1.jpg",
+          "/images/products/scatters/canvas-stripe/canvas-stripe-2.jpg"
         ],
         "quantity": 2
+      },
+      {
+        "name": "Aztec cushion",
+        "nameNote": "With a linen back",
+        "size": "65cm x 65cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 650
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "70cm x 70cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/aztec-cushion/aztec-cushion-3.jpg",
+          "/images/products/scatters/aztec-cushion/aztec-cushion-4.jpg",
+          "/images/products/scatters/aztec-cushion/aztec-cushion-1.jpg",
+          "/images/products/scatters/aztec-cushion/aztec-cushion-2.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Chalk Dust",
+        "nameNote": "With velvet backs in sky blue",
+        "size": "65cm x 65cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 650
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "70cm x 70cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/chalk-dust/chalk-dust-2.jpg",
+          "/images/products/scatters/chalk-dust/chalk-dust-4.jpg",
+          "/images/products/scatters/chalk-dust/chalk-dust-3.jpg",
+          "/images/products/scatters/chalk-dust/chalk-dust-1.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Crayon Graphic",
+        "nameNote": "With velvet blue backs",
+        "size": "65cm x 65cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 655
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "70cm x 70cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/crayon-graphic/crayon-graphic-2.jpg",
+          "/images/products/scatters/crayon-graphic/crayon-graphic-3.jpg",
+          "/images/products/scatters/crayon-graphic/crayon-graphic-4.jpg",
+          "/images/products/scatters/crayon-graphic/crayon-graphic-1.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Protea Cushions",
+        "nameNote": "With velvet backs",
+        "size": "80cm x 50cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 800
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 540,
+            "note": "85cm x 55cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/protea-cushions/protea-cushions-2.jpg",
+          "/images/products/scatters/protea-cushions/protea-cushions-3.jpg",
+          "/images/products/scatters/protea-cushions/protea-cushions-1.jpg",
+          "/images/products/scatters/protea-cushions/protea-cushions-4.jpg",
+          "/images/products/scatters/protea-cushions/protea-cushions-5.jpg",
+          "/images/products/scatters/protea-cushions/protea-cushions-6.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Aqua Cushions piped",
+        "nameNote": "In Tangerine",
+        "size": "60cm x 60cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 1150
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "65cm x 65cm"
+          }
+        ],
+        "images": [""],
+        "quantity": 2
+      },
+      {
+        "name": "Ardmore leopard print cushion",
+        "nameNote": "Backed in Tangerine",
+        "size": "51cm x 70cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 830
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 65cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/ardmore-leopard-print-cushion/ardmore-leopard-print-cushion-1.jpg",
+          "/images/products/scatters/ardmore-leopard-print-cushion/ardmore-leopard-print-cushion-2.jpg",
+          "/images/products/scatters/ardmore-leopard-print-cushion/ardmore-leopard-print-cushion-3.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Blue Rosewater cushions",
+        "nameNote": "Backed in a faded blue broad stripe",
+        "size": "53cm x 59cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 700
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 295.0,
+            "note": "55cm x 65cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-3.jpg",
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-4.jpg",
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-5.jpg",
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-1.jpg",
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-2.jpg"
+        ],
+        "quantity": 4
+      },
+      {
+        "name": "Beach Palm cushion",
+        "size": "50cm x 70cm",
+        "inStock": false,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 1550
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/beach-palm-cushion/beach-palm-cushion-2.jpg",
+          "/images/products/scatters/beach-palm-cushion/beach-palm-cushion-1.jpg"
+        ],
+        "quantity": 0
+      },
+      {
+        "name": "Magnolia on Linen cushion",
+        "size": "50cm x 70cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover (cushion cover only)",
+            "amountInclVat": 1550
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-2.jpg",
+          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-3.jpg",
+          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-4.jpg",
+          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-1.jpg",
+          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-5.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Bird on Linen cushion",
+        "size": "50cm x 70cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover (cushion cover only)",
+            "amountInclVat": 1550
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/bird-on-linen/bird-on-linen-2.jpg",
+          "/images/products/scatters/bird-on-linen/bird-on-linen-3.jpg",
+          "/images/products/scatters/bird-on-linen/bird-on-linen-1.jpg",
+          "/images/products/scatters/bird-on-linen/bird-on-linen-4.jpg"
+        ],
+        "quantity": 1
       },
       {
         "name": "Quilted Blush",
@@ -90,260 +330,6 @@
           "/images/products/scatters/aqua-bliss/aqua-bliss-3.jpg"
         ],
         "quantity": 2
-      }
-    ],
-    "ottomans": [
-      {
-        "name": "Classic Velvet Ottoman",
-        "size": "120cm x 45cm x 45cm",
-        "inStock": true,
-        "category": "Ottomans",
-        "description": [
-          "Upholstered in luxurious velvet with deep button tufting.",
-          "Solid wood legs for durability."
-        ],
-        "prices": [
-          {
-            "name": "Ottoman",
-            "amountExVat": 2600.0,
-            "amountInclVat": 2990.0
-          }
-        ],
-        "images": [
-          "https://picsum.photos/400/600",
-          "https://picsum.photos/500/600"
-        ],
-        "quantity": 1
-      },
-      {
-        "name": "Storage Ottoman",
-        "size": "100cm x 40cm x 40cm",
-        "inStock": true,
-        "category": "Ottomans",
-        "description": [
-          "Features a lift-up lid for convenient storage.",
-          "Upholstered in durable linen fabric."
-        ],
-        "prices": [
-          {
-            "name": "Ottoman",
-            "amountExVat": 2100.0,
-            "amountInclVat": 2415.0
-          }
-        ],
-        "images": [
-          "https://picsum.photos/600/400",
-          "https://picsum.photos/600/300"
-        ],
-        "quantity": 3
-      },
-      {
-        "name": "Round Pouf Ottoman",
-        "size": "60cm diameter x 40cm height",
-        "inStock": true,
-        "category": "Ottomans",
-        "description": [
-          "Soft round pouf, perfect for extra seating or as a footrest.",
-          "Available in multiple colors."
-        ],
-        "prices": [
-          {
-            "name": "Ottoman",
-            "amountExVat": 1450.0,
-            "amountInclVat": 1667.5
-          }
-        ],
-        "images": ["https://picsum.photos/500/600"],
-        "quantity": 5
-      }
-    ],
-    "bedsidePedestals": [
-      {
-        "name": "Modern Oak Pedestal",
-        "size": "50cm x 40cm x 60cm",
-        "inStock": true,
-        "category": "Bedside Pedestals",
-        "description": [
-          "Crafted from solid oak with a natural finish.",
-          "Single drawer and open shelf for storage."
-        ],
-        "prices": [
-          {
-            "name": "Pedestal",
-            "amountExVat": 1850.0,
-            "amountInclVat": 2127.5
-          }
-        ],
-        "images": [
-          "https://picsum.photos/500/500",
-          "https://picsum.photos/600/500"
-        ],
-        "quantity": 2
-      },
-      {
-        "name": "White Minimalist Pedestal",
-        "size": "45cm x 35cm x 55cm",
-        "inStock": true,
-        "category": "Bedside Pedestals",
-        "description": [
-          "Sleek white finish with push-to-open drawer.",
-          "Perfect for modern bedrooms."
-        ],
-        "prices": [
-          {
-            "name": "Pedestal",
-            "amountExVat": 1600.0,
-            "amountInclVat": 1840.0
-          }
-        ],
-        "images": ["https://picsum.photos/400/600"],
-        "quantity": 4
-      },
-      {
-        "name": "Vintage Pedestal",
-        "size": "55cm x 38cm x 60cm",
-        "inStock": true,
-        "category": "Bedside Pedestals",
-        "description": [
-          "Distressed wood finish for a vintage look.",
-          "Two drawers with antique brass handles."
-        ],
-        "prices": [
-          {
-            "name": "Pedestal",
-            "amountExVat": 1950.0,
-            "amountInclVat": 2242.5
-          }
-        ],
-        "images": [
-          "https://picsum.photos/600/500",
-          "https://picsum.photos/400/600"
-        ],
-        "quantity": 1
-      }
-    ],
-    "cabinets": [
-      {
-        "name": "Glass Display Cabinet",
-        "size": "90cm x 40cm x 180cm",
-        "inStock": true,
-        "category": "Cabinets",
-        "description": [
-          "Tall cabinet with glass doors and shelves.",
-          "Ideal for displaying decor or collectibles."
-        ],
-        "prices": [
-          {
-            "name": "Cabinet",
-            "amountExVat": 4200.0,
-            "amountInclVat": 4830.0
-          }
-        ],
-        "images": ["https://picsum.photos/400/400"],
-        "quantity": 1
-      },
-      {
-        "name": "Rustic Sideboard",
-        "size": "150cm x 45cm x 85cm",
-        "inStock": true,
-        "category": "Cabinets",
-        "description": [
-          "Rustic wood finish with three drawers and two cabinets.",
-          "Perfect for dining or living rooms."
-        ],
-        "prices": [
-          {
-            "name": "Cabinet",
-            "amountExVat": 3700.0,
-            "amountInclVat": 4255.0
-          }
-        ],
-        "images": [
-          "https://picsum.photos/500/500",
-          "https://picsum.photos/700/700"
-        ],
-        "quantity": 2
-      },
-      {
-        "name": "Compact Shoe Cabinet",
-        "size": "80cm x 35cm x 100cm",
-        "inStock": true,
-        "category": "Cabinets",
-        "description": [
-          "Slim cabinet with multiple shelves for shoe storage.",
-          "White lacquered finish."
-        ],
-        "prices": [
-          {
-            "name": "Cabinet",
-            "amountExVat": 2100.0,
-            "amountInclVat": 2415.0
-          }
-        ],
-        "images": ["https://picsum.photos/800/600"],
-        "quantity": 3
-      }
-    ],
-    "headboards": [
-      {
-        "name": "Upholstered Headboard",
-        "size": "Queen: 160cm x 120cm",
-        "inStock": true,
-        "category": "Headboards",
-        "description": [
-          "Padded and upholstered in soft grey fabric.",
-          "Wall-mount or bed-frame compatible."
-        ],
-        "prices": [
-          {
-            "name": "Headboard",
-            "amountExVat": 2200.0,
-            "amountInclVat": 2530.0
-          }
-        ],
-        "images": ["https://picsum.photos/800/800"],
-        "quantity": 2
-      },
-      {
-        "name": "Wooden Slat Headboard",
-        "size": "King: 190cm x 110cm",
-        "inStock": true,
-        "category": "Headboards",
-        "description": [
-          "Natural wood slats for a minimalist look.",
-          "Easy to install and maintain."
-        ],
-        "prices": [
-          {
-            "name": "Headboard",
-            "amountExVat": 1850.0,
-            "amountInclVat": 2127.5
-          }
-        ],
-        "images": [
-          "https://picsum.photos/400/600",
-          "https://picsum.photos/600/400"
-        ],
-        "quantity": 1
-      },
-      {
-        "name": "Button-Tufted Headboard",
-        "size": "Double: 140cm x 115cm",
-        "inStock": true,
-        "category": "Headboards",
-        "description": [
-          "Elegant button-tufted design in navy blue fabric.",
-          "Adds a touch of luxury to any bedroom."
-        ],
-        "prices": [
-          {
-            "name": "Headboard",
-            "amountExVat": 2000.0,
-            "amountInclVat": 2300.0
-          }
-        ],
-        "images": ["https://picsum.photos/700/600"],
-        "quantity": 3
       }
     ]
   }

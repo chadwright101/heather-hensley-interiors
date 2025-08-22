@@ -6,11 +6,12 @@ export interface HeaderProps {
 export interface ProductProps {
   categoryData: {
     name: string;
+    nameNote?: string;
     size: string;
     description: string[];
     prices: {
       name: string;
-      amountExVat: number;
+      amountExVat?: number;
       amountInclVat: number;
       note?: string;
     }[];

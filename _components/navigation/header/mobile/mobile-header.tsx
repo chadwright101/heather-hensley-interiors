@@ -31,7 +31,7 @@ export function MobileHeader() {
         <div className="flex flex-col gap-5 w-full items-center ease-in-out duration-300">
           <Link href="/" className="flex gap-1 items-center translate-y-2">
             <Image
-              src="/logo/heather-hensley-interiors-logo-white.png"
+              src="/logo/heather-hensley-interiors-logo.png"
               alt="Heather Hensley Interiors logo"
               width={190}
               height={105}
