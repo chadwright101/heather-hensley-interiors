@@ -33,7 +33,6 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
         }}
         spaceBetween={20}
         slidesPerView={1}
-        loop
         breakpoints={{
           700: {
             slidesPerView: 2,
@@ -47,7 +46,7 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full bg-white aspect-square rounded-[6px] overflow-hidden mb-8 desktop:aspect-[3.6/4] desktop:mb-5">
+            <div className="w-full bg-white aspect-square rounded-[6px] overflow-hidden mb-8 desktop:mb-5">
               <Image
                 src={image}
                 alt={`${productName} view ${index + 1}`}
@@ -79,19 +78,10 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
           spaceBetween={20}
           slidesPerView={6}
           watchSlidesProgress={true}
-          loop
         >
           {images.map((image, index) => (
             <SwiperSlide key={index} className="cursor-pointer">
-              <div
-                className={classNames(
-                  "w-full bg-white rounded-[6px] overflow-hidden",
-                  {
-                    "h-[90px]": images.length > 6,
-                    "h-[110px]": images.length <= 6,
-                  }
-                )}
-              >
+              <div className="w-full aspect-square bg-white rounded-[6px] overflow-hidden">
                 <Image
                   src={image}
                   alt={`${productName} thumbnail ${index + 1}`}
