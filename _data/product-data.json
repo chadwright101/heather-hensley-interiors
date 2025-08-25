@@ -127,8 +127,7 @@
           "/images/products/scatters/protea-cushions/protea-cushions-3.jpg",
           "/images/products/scatters/protea-cushions/protea-cushions-1.jpg",
           "/images/products/scatters/protea-cushions/protea-cushions-4.jpg",
-          "/images/products/scatters/protea-cushions/protea-cushions-5.jpg",
-          "/images/products/scatters/protea-cushions/protea-cushions-6.jpg"
+          "/images/products/scatters/protea-cushions/protea-cushions-5.jpg"
         ],
         "quantity": 2
       },
@@ -204,8 +203,7 @@
           "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-3.jpg",
           "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-4.jpg",
           "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-5.jpg",
-          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-1.jpg",
-          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-2.jpg"
+          "/images/products/scatters/blue-rosewater-cushions/blue-rosewater-cushions-1.jpg"
         ],
         "quantity": 4
       },
@@ -253,7 +251,6 @@
           "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-2.jpg",
           "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-3.jpg",
           "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-4.jpg",
-          "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-1.jpg",
           "/images/products/scatters/magnolia-on-linen-cushion/magnolia-on-linen-cushion-5.jpg"
         ],
         "quantity": 1
@@ -278,8 +275,7 @@
         "images": [
           "/images/products/scatters/bird-on-linen/bird-on-linen-2.jpg",
           "/images/products/scatters/bird-on-linen/bird-on-linen-3.jpg",
-          "/images/products/scatters/bird-on-linen/bird-on-linen-1.jpg",
-          "/images/products/scatters/bird-on-linen/bird-on-linen-4.jpg"
+          "/images/products/scatters/bird-on-linen/bird-on-linen-1.jpg"
         ],
         "quantity": 1
       },
@@ -303,35 +299,6 @@
           "/images/products/scatters/quilted-blush/quilted-blush-2a.png",
           "/images/products/scatters/quilted-blush/quilted-blush-3a.png",
           "/images/products/scatters/quilted-blush/quilted-blush-4a.jpg"
-        ],
-        "quantity": 2
-      },
-      {
-        "name": "Aqua Bliss",
-        "size": "60cm x 60cm",
-        "inStock": true,
-        "category": "Scatter Cushion",
-        "description": [
-          "Aqua scatter cushions with some spice. Piping in Tangerine.",
-          "Supplied with or without a down inner."
-        ],
-        "prices": [
-          {
-            "name": "Cushion cover",
-            "amountExVat": 669.56,
-            "amountInclVat": 770.0
-          },
-          {
-            "name": "Down inner",
-            "amountExVat": 256.52,
-            "amountInclVat": 295.0,
-            "note": "65cm x 65cm inner required"
-          }
-        ],
-        "images": [
-          "/images/products/scatters/aqua-bliss/aqua-bliss-1.jpg",
-          "/images/products/scatters/aqua-bliss/aqua-bliss-2.jpg",
-          "/images/products/scatters/aqua-bliss/aqua-bliss-3.jpg"
         ],
         "quantity": 2
       }

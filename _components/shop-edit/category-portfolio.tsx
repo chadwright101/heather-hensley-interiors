@@ -9,7 +9,7 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
 
   useEffect(() => {
     setIsVisible(false);
-    const timer = setTimeout(() => setIsVisible(true), 200);
+    const timer = setTimeout(() => setIsVisible(true), 50);
     return () => clearTimeout(timer);
   }, [categoryData]);
 
@@ -30,7 +30,7 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
               }
             )}
             style={{
-              transitionDelay: isVisible ? `${index * 400}ms` : "0ms",
+              transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
             }}
           >
             <div className="aspect-square rounded-[6px] overflow-hidden">
