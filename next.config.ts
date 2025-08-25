@@ -5,14 +5,6 @@ const nextConfig: NextConfig = {
   images: {
     deviceSizes: [425, 800, 1280, 1600],
     minimumCacheTTL: 86400,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "picsum.photos",
-        port: "",
-        pathname: "/**",
-      },
-    ],
   },
 };
 

@@ -150,7 +150,11 @@
             "note": "65cm x 65cm"
           }
         ],
-        "images": [""],
+        "images": [
+          "/images/products/scatters/aqua-cushions-piped/aqua-cushions-piped-1.png",
+          "/images/products/scatters/aqua-cushions-piped/aqua-cushions-piped-2.png",
+          "/images/products/scatters/aqua-cushions-piped/aqua-cushions-piped-3.png"
+        ],
         "quantity": 2
       },
       {
@@ -295,10 +299,10 @@
           }
         ],
         "images": [
-          "/images/products/scatters/quilted-blush/quilted-blush-1.jpg",
-          "/images/products/scatters/quilted-blush/quilted-blush-2.jpg",
-          "/images/products/scatters/quilted-blush/quilted-blush-3.jpg",
-          "/images/products/scatters/quilted-blush/quilted-blush-4.jpg"
+          "/images/products/scatters/quilted-blush/quilted-blush-1a.jpg",
+          "/images/products/scatters/quilted-blush/quilted-blush-2a.png",
+          "/images/products/scatters/quilted-blush/quilted-blush-3a.png",
+          "/images/products/scatters/quilted-blush/quilted-blush-4a.jpg"
         ],
         "quantity": 2
       },

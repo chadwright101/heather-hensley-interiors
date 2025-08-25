@@ -4,8 +4,6 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 import ProductSlider from "@/_components/shop-edit/product-page/product-slider";
-import ProductEnquiryForm from "@/_components/shop-edit/product-page/product-enquiry-form";
-import ButtonLink from "@/_components/ui/buttons/button-link";
 import ShowEmailAddress from "@/_components/ui/contact/show-email-address";
 import ShowPhoneNumber from "@/_components/ui/contact/show-phone-number";
 
