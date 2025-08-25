@@ -39,7 +39,7 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
                 alt={name}
                 width={800}
                 height={800}
-                className="h-full w-full object-cover transition-transform duration-500 desktop:hover:scale-[102%]"
+                className="h-full bg-white w-full object-cover transition-transform duration-500 desktop:hover:scale-[102%]"
                 sizes="(max-width:800px) 400px, 100vw"
               />
             </div>

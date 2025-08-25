@@ -47,7 +47,7 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
       >
         {images.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="w-full aspect-square rounded-[6px] overflow-hidden mb-8 desktop:aspect-[3.6/4] desktop:mb-5">
+            <div className="w-full bg-white aspect-square rounded-[6px] overflow-hidden mb-8 desktop:aspect-[3.6/4] desktop:mb-5">
               <Image
                 src={image}
                 alt={`${productName} view ${index + 1}`}
@@ -84,10 +84,13 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
           {images.map((image, index) => (
             <SwiperSlide key={index} className="cursor-pointer">
               <div
-                className={classNames("w-full rounded-[6px] overflow-hidden", {
-                  "h-[90px]": images.length > 6,
-                  "h-[110px]": images.length <= 6,
-                })}
+                className={classNames(
+                  "w-full bg-white rounded-[6px] overflow-hidden",
+                  {
+                    "h-[90px]": images.length > 6,
+                    "h-[110px]": images.length <= 6,
+                  }
+                )}
               >
                 <Image
                   src={image}
