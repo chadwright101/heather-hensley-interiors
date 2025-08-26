@@ -28,12 +28,12 @@ const ShowEmailAddress = ({ buttonClasses, linkClasses }: showContactProps) => {
       <button
         onClick={() => handleShowEmailAddress()}
         className={classNames(
-          "px-2 text-left -mx-2 py-3 -my-3 text-paragraph hover:cursor-pointer italic desktop:p-0 desktop:m-0",
+          "px-2 text-left -mx-2 py-3 -my-3 text-paragraph hover:cursor-pointer italic desktop:p-0 desktop:m-0 inline-block transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5",
           buttonClasses
         )}
         aria-label="Show email address"
       >
-        {showSpinnerEmail ? <div className="spinner-contact"></div> : showEmail}
+        {showSpinnerEmail ? <div className="spinner"></div> : showEmail}
       </button>
     );
   } else {
@@ -41,7 +41,7 @@ const ShowEmailAddress = ({ buttonClasses, linkClasses }: showContactProps) => {
       <Link
         href={`mailto:${showEmail}`}
         className={classNames(
-          "py-3 text-left px-2 -my-3 text-paragraph text-link-blue -mx-2 desktop:p-0 desktop:m-0",
+          "py-3 text-left px-2 -my-3 text-paragraph text-link-blue -mx-2 desktop:p-0 desktop:m-0 inline-block transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5",
           linkClasses
         )}
       >

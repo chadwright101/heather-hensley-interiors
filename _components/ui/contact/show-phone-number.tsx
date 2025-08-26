@@ -25,12 +25,12 @@ const ShowPhoneNumber = ({ buttonClasses, linkClasses }: showContactProps) => {
       <button
         onClick={() => handleShowPhoneNumbers()}
         className={classNames(
-          "px-2 text-left -mx-2 text-paragraph py-3 -my-3 hover:cursor-pointer tablet:p-0 tablet:m-0 italic",
+          "px-2 text-left -mx-2 text-paragraph py-3 -my-3 hover:cursor-pointer tablet:p-0 tablet:m-0 italic inline-block transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5",
           buttonClasses
         )}
         aria-label="Show phone number"
       >
-        {showSpinnerPhone ? <div className="spinner-contact"></div> : showPhone}
+        {showSpinnerPhone ? <div className="spinner"></div> : showPhone}
       </button>
     );
   } else {
@@ -38,7 +38,7 @@ const ShowPhoneNumber = ({ buttonClasses, linkClasses }: showContactProps) => {
       <Link
         href={`tel:${showPhone}`}
         className={classNames(
-          "py-3 text-left px-2 -my-3 -mx-2 text-paragraph text-link-blue tablet:p-0 tablet:m-0",
+          "py-3 text-left px-2 -my-3 -mx-2 text-paragraph text-link-blue tablet:p-0 tablet:m-0 inline-block transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5",
           linkClasses
         )}
       >

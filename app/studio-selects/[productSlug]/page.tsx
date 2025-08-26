@@ -145,10 +145,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   />
                 </Link>
               </li>
-              <li className="inline-block mr-auto transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5">
+              <li className="mr-auto">
                 <ShowEmailAddress />
               </li>
-              <li className="inline-block mr-auto transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5">
+              <li className="mr-auto">
                 <ShowPhoneNumber />
               </li>
             </ul>
