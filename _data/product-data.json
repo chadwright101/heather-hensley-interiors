@@ -3,8 +3,133 @@
   "categories": {
     "scatters": [
       {
+        "name": "Lady Swimmers",
+        "nameNote": "With a textured back",
+        "size": "50cm x 70cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 750
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/lady-swimmers/lady-swimmers-3.jpg",
+          "/images/products/scatters/lady-swimmers/lady-swimmers-5.jpg",
+          "/images/products/scatters/lady-swimmers/lady-swimmers-1.jpg",
+          "/images/products/scatters/lady-swimmers/lady-swimmers-2.jpg",
+          "/images/products/scatters/lady-swimmers/lady-swimmers-4.jpg"
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Suzanne in Aqua",
+        "nameNote": "On Linen",
+        "size": "50cm x 70cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 1100
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/suzanne-in-aqua/suzanne-in-aqua-2.jpg",
+          "/images/products/scatters/suzanne-in-aqua/suzanne-in-aqua-1.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Green Velvet cushion",
+        "size": "50cm x 68cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 950
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "55cm x 75cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-6.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-3.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-7.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-8.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-1.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-2.jpg",
+          "/images/products/scatters/green-velvet-cushion/green-velvet-cushion-4.jpg"
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Tribal print cushion",
+        "size": "65cm x 65cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 500
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395.0,
+            "note": "70cm x 70cm"
+          }
+        ],
+        "images": ["/images/products/scatters/tribal-print/tribal-print-1.jpg"],
+        "quantity": 2
+      },
+      {
+        "name": "Karoo Aloe",
+        "nameNote": "On a linen back",
+        "size": "60cm x 60cm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [""],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 600
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 295.0,
+            "note": "65cm x 65cm"
+          }
+        ],
+        "images": [
+          "/images/products/scatters/karoo-aloe/karoo-aloe-3.jpg",
+          "/images/products/scatters/karoo-aloe/karoo-aloe-6.jpg",
+          "/images/products/scatters/karoo-aloe/karoo-aloe-1.jpg",
+          "/images/products/scatters/karoo-aloe/karoo-aloe-5.jpg"
+        ],
+        "quantity": 2
+      },
+
+      {
         "name": "Canvas Stripe",
-        "nameNote": "With a linen back",
         "size": "65cm x 65cm",
         "inStock": true,
         "category": "Scatter Cushion",
@@ -238,7 +363,7 @@
         "description": [""],
         "prices": [
           {
-            "name": "Cushion cover (cushion cover only)",
+            "name": "Cushion cover",
             "amountInclVat": 1550
           },
           {
@@ -263,7 +388,7 @@
         "description": [""],
         "prices": [
           {
-            "name": "Cushion cover (cushion cover only)",
+            "name": "Cushion cover",
             "amountInclVat": 1550
           },
           {
