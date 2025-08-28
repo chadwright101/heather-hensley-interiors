@@ -97,25 +97,47 @@ export default async function ProductPage({ params }: ProductPageProps) {
             </h2>
             <h3 className="text-paragraph normal-case">{product.nameNote}</h3>
           </div>
-          <div className="flex flex-col gap-2 w-full">
-            {product.prices[0].amountExVat != null && (
-              <p className="text-light-brown text-[18px] font-semibold">
-                R {product.prices[0].amountExVat.toFixed(2)}{" "}
-                <span className="font-light">ex. VAT</span>
-              </p>
-            )}
-            {product.prices[0].amountInclVat != null && (
-              <p className="text-light-brown text-[18px] font-semibold">
-                R {product.prices[0].amountInclVat.toFixed(2)}{" "}
-                <span className="font-light">incl. VAT</span>
-              </p>
-            )}
+          <div className="flex justify-between w-full gap-10 min-[600px]:justify-start">
+            {product.prices.map((price, index) => (
+              <div key={index} className="flex flex-col gap-1">
+                <p className="text-light-brown text-[16px] font-medium flex flex-col">
+                  <span className="text-light-brown text-[16px] font-medium">
+                    {price.name}
+                    <span className="text-light-brown text-[16px] font-medium">
+                      :
+                    </span>
+                  </span>
+
+                  {price.note && (
+                    <span className="text-light-brown text-[16px] font-medium">
+                      {" "}
+                      ({price.note})
+                    </span>
+                  )}
+                  {product.size && index === 0 && (
+                    <span className="text-light-brown text-[16px] font-medium">
+                      {" "}
+                      ({product.size})
+                    </span>
+                  )}
+                </p>
+                {price.amountExVat != null && (
+                  <p className="text-light-brown text-[18px] font-semibold">
+                    R {price.amountExVat.toFixed(2)}{" "}
+                    <span className="font-light">ex. VAT</span>
+                  </p>
+                )}
+                {price.amountInclVat != null && (
+                  <p className="text-light-brown text-[18px] font-semibold">
+                    R {price.amountInclVat.toFixed(2)}{" "}
+                    <span className="font-light">incl. VAT</span>
+                  </p>
+                )}
+              </div>
+            ))}
           </div>
           <p className="text-light-brown text-[18px] font-thin w-full">
             {product.category}
-          </p>
-          <p className="text-light-brown text-[18px] font-thin">
-            Size: {product.size}
           </p>
           {!product.inStock && (
             <p className="text-[18px] text-black/50 font-semibold uppercase">
@@ -146,7 +168,10 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </Link>
               </li>
               <li className="mr-auto">
-                <ShowEmailAddress />
+                <ShowEmailAddress 
+                  productName={product.name}
+                  productCategory={product.category}
+                />
               </li>
               <li className="mr-auto">
                 <ShowPhoneNumber />

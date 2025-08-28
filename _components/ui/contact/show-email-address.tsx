@@ -10,9 +10,16 @@ import { fetchEmailAddress } from "@/_actions/contact-actions";
 export interface showContactProps {
   buttonClasses?: string;
   linkClasses?: string;
+  productName?: string;
+  productCategory?: string;
 }
 
-const ShowEmailAddress = ({ buttonClasses, linkClasses }: showContactProps) => {
+const ShowEmailAddress = ({
+  buttonClasses,
+  linkClasses,
+  productName,
+  productCategory,
+}: showContactProps) => {
   const [showEmail, setShowEmail] = useState("Show email address");
   const [showSpinnerEmail, setShowSpinnerEmail] = useState(false);
 
@@ -37,9 +44,25 @@ const ShowEmailAddress = ({ buttonClasses, linkClasses }: showContactProps) => {
       </button>
     );
   } else {
+    const createMailtoUrl = () => {
+      let mailtoUrl = `mailto:${showEmail}`;
+
+      if (productName && productCategory) {
+        const subject = encodeURIComponent(
+          `Website enquiry - ${productName} (${productCategory})`
+        );
+        const body = encodeURIComponent(
+          `Hi there,\n\nI am interested in your ${productName} from your ${productCategory} range.`
+        );
+        mailtoUrl += `?subject=${subject}&body=${body}`;
+      }
+
+      return mailtoUrl;
+    };
+
     return (
       <Link
-        href={`mailto:${showEmail}`}
+        href={createMailtoUrl()}
         className={classNames(
           "py-3 text-left px-2 -my-3 text-paragraph text-link-blue -mx-2 desktop:p-0 desktop:m-0 inline-block transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5 desktop:hover:-translate-y-1.5",
           linkClasses
