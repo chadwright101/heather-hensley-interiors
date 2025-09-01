@@ -78,12 +78,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  const { product } = result;
+  const { product, category } = result;
 
   return (
     <div className="flex flex-col gap-10 justify-start px-5 desktop:grid grid-cols-[600px_1fr]">
       <Link
-        href="/"
+        href={`/?category=${category}#${resolvedParams.productSlug}`}
         className="text-light-brown p-2 -m-2 place-self-start text-left text-paragraph font-light desktop:col-span-2 desktop:p-0 desktop:m-0 inline-block desktop:hover:-translate-y-1.5 transition-transform duration-400 ease-in-out pb-1.5 -mb-1.5"
       >
         ← Back to Shop
@@ -98,43 +98,49 @@ export default async function ProductPage({ params }: ProductPageProps) {
             <h3 className="text-paragraph normal-case">{product.nameNote}</h3>
           </div>
           <div className="flex justify-between w-full gap-10 min-[600px]:justify-start">
-            {product.prices.map((price, index) => (
-              <div key={index} className="flex flex-col gap-1">
-                <p className="text-light-brown text-[16px] font-medium flex flex-col">
-                  <span className="text-light-brown text-[16px] font-medium">
-                    {price.name}
+            {product.prices &&
+              product.prices.map((price, index) => (
+                <div key={index} className="flex flex-col gap-1">
+                  <p className="text-light-brown text-[16px] font-medium flex flex-col">
                     <span className="text-light-brown text-[16px] font-medium">
-                      :
+                      {price.name}
+                      <span className="text-light-brown text-[16px] font-medium">
+                        :
+                      </span>
                     </span>
-                  </span>
 
-                  {price.note && (
-                    <span className="text-light-brown text-[16px] font-medium">
-                      {" "}
-                      ({price.note})
-                    </span>
-                  )}
-                  {product.size && index === 0 && (
-                    <span className="text-light-brown text-[16px] font-medium">
-                      {" "}
-                      ({product.size})
-                    </span>
-                  )}
-                </p>
-                {price.amountExVat != null && (
-                  <p className="text-light-brown text-[18px] font-semibold">
-                    R {price.amountExVat.toFixed(2)}{" "}
-                    <span className="font-light">ex. VAT</span>
+                    {price.note && (
+                      <span className="text-light-brown text-[16px] font-medium">
+                        {" "}
+                        ({price.note})
+                      </span>
+                    )}
+                    {product.size && index === 0 && (
+                      <span className="text-light-brown text-[16px] font-medium">
+                        {" "}
+                        ({product.size})
+                      </span>
+                    )}
                   </p>
-                )}
-                {price.amountInclVat != null && (
-                  <p className="text-light-brown text-[18px] font-semibold">
-                    R {price.amountInclVat.toFixed(2)}{" "}
-                    <span className="font-light">incl. VAT</span>
-                  </p>
-                )}
-              </div>
-            ))}
+                  {price.amountExVat != null && (
+                    <p className="text-light-brown text-[18px] font-semibold">
+                      R {price.amountExVat.toFixed(2)}{" "}
+                      <span className="font-light">ex. VAT</span>
+                    </p>
+                  )}
+                  {price.amountInclVat != null && (
+                    <p className="text-light-brown text-[18px] font-semibold">
+                      R {price.amountInclVat.toFixed(2)}{" "}
+                      <span className="font-light">incl. VAT</span>
+                    </p>
+                  )}
+                </div>
+              ))}
+            {!product.prices && product.bespoke && (
+              <p className="text-light-brown italic">
+                Contact for more information
+              </p>
+            )}
           </div>
           <p className="text-light-brown text-[18px] font-thin w-full">
             {product.category}
@@ -168,7 +174,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 </Link>
               </li>
               <li className="mr-auto">
-                <ShowEmailAddress 
+                <ShowEmailAddress
                   productName={product.name}
                   productCategory={product.category}
                 />

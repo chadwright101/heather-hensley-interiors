@@ -1,5 +1,5 @@
 {
-  "filter": ["Scatters"],
+  "filter": ["Scatters", "Bespoke Furniture"],
   "categories": {
     "scatters": [
       {
@@ -426,6 +426,104 @@
           "/images/products/scatters/quilted-blush/quilted-blush-4a.jpg"
         ],
         "quantity": 2
+      }
+    ],
+    "bespoke-furniture": [
+      {
+        "name": "The Savoy Ottoman",
+        "size": "1200mm wide x 300mm deep x 450mm high",
+        "inStock": true,
+        "category": "Bespoke Furniture",
+        "bespoke": true,
+        "description": [
+          "A smaller piece with a big presence, the Savoy Ottoman makes a stylish statement by the fireplace or nestled against a wall. Its seat is elegantly cradled within an antique gold flat bar metal framework, blending modern design with timeless distinction. Perfect for adding a touch of luxe and functionality to any room."
+        ],
+        "images": [
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-2.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-3.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-4.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-1.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-5.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-6.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-7.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-8.jpg",
+          "/images/products/bespoke-furniture/the-savoy-ottoman/the-savoy-ottoman-10.jpg"
+        ]
+      },
+      {
+        "name": "The Generous Ottoman",
+        "size": "1600mm wide x 500mm deep x 500mm high",
+        "inStock": true,
+        "category": "Bespoke Furniture",
+        "bespoke": true,
+        "description": [
+          "Upholstered with a deep skirt and a plush, loose seat cushion, this ottoman brings softness and elegance to any space. Generous in size, it works beautifully at the end of a bed or positioned against a wall to create sumptuous seating in a hallway, entrance, bedroom, or even a bathroom.",
+          "A versatile piece that adds both comfort and a sense of quiet luxury wherever it's placed."
+        ],
+        "images": [
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-1.jpg",
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-2.jpg",
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-6.jpg",
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-3.jpg",
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-4.jpg",
+          "/images/products/bespoke-furniture/the-generous-ottoman/the-generous-ottoman-5.jpg"
+        ]
+      },
+      {
+        "name": "The Ridley Bedside Table",
+        "size": "800mm wide x 500mm deep x 650mm high",
+        "inStock": true,
+        "category": "Bespoke Furniture",
+        "bespoke": true,
+        "description": [
+          "A generous bedside pedestal in solid Oak wood with ribbed drawer fronts."
+        ],
+        "images": [
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-1.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-2.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-3.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-4.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-5.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-6.jpg",
+          "/images/products/bespoke-furniture/the-ridley-bedside-pedestal/the-ridley-bedside-pedestal-7.jpg"
+        ]
+      },
+      {
+        "name": "The Sunday Sofa",
+        "nameNote": "Laid-back comfort, made for lounging. Available in two sizes.",
+        "inStock": true,
+        "category": "Bespoke Furniture",
+        "bespoke": true,
+        "description": [
+          "Features a removable slipcover for easy care. The medium seat depth offers excellent support — roomy enough for taller sitters to stretch out comfortably without a scatter cushion. For shorter sitters, adding a cushion behind the back provides just the right support. Comfortable and practical for those who need a bit more support getting up.",
+          "Unbelievably comfortable.",
+          "The seat is crafted with foam and wrapped in Dacron for a softer, more relaxed feel. Looks best with fewer scatter cushions for an effortless, laid-back look — especially with its loose back cushions."
+        ],
+        "images": [
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-1.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-4.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-3.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-5.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-6.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-7.jpg",
+          "/images/products/bespoke-furniture/the-sunday-sofa/the-sunday-sofa-8.jpg"
+        ]
+      },
+
+      {
+        "name": "The Versatile Backless Bench",
+        "size": "1800mm wide x 450mm deep x 450mm high",
+        "inStock": true,
+        "category": "Bespoke Furniture",
+        "bespoke": true,
+        "description": [
+          "A simple, functional piece that works at the end of a bed, under artwork in an entryway, or even at a dining table. The natural oak frame adds warmth, while the fixed seat keeps everything in place — no shifting cushions, just easy, everyday use."
+        ],
+        "images": [
+          "/images/products/bespoke-furniture/the-versatile-backless-bench/the-versatile-backless-bench-2.jpg",
+          "/images/products/bespoke-furniture/the-versatile-backless-bench/the-versatile-backless-bench-1.jpg",
+          "/images/products/bespoke-furniture/the-versatile-backless-bench/the-versatile-backless-bench-3.jpg"
+        ]
       }
     ]
   }

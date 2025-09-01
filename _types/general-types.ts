@@ -7,17 +7,18 @@ export interface ProductProps {
   categoryData: {
     name: string;
     nameNote?: string;
-    size: string;
+    size?: string;
     description: string[];
-    prices: {
+    prices?: {
       name: string;
       amountExVat?: number;
       amountInclVat: number;
       note?: string;
     }[];
     images: string[];
-    quantity: number;
+    quantity?: number;
     inStock: boolean;
     category: string;
+    bespoke?: boolean;
   }[];
 }

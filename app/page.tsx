@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Image from "next/image";
 
 import CategoryPortfolio from "@/_components/shop-edit/category-portfolio";
@@ -10,9 +11,37 @@ import categoryData from "@/_data/product-data.json";
 
 const { categories } = categoryData;
 
+const reverseMapping: { [key: string]: string } = {
+  scatters: "Scatters",
+  ottomans: "Ottomans",
+  bedsidePedestals: "Bedside Pedestals",
+  cabinets: "Cabinets",
+  headboards: "Headboards",
+  "bespoke-furniture": "Bespoke Furniture",
+};
+
 export default function Home() {
-  const [showCategory, setShowCategory] = useState("Scatters");
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const initialCategory =
+    categoryParam && reverseMapping[categoryParam]
+      ? reverseMapping[categoryParam]
+      : "Scatters";
+
+  const [showCategory, setShowCategory] = useState(initialCategory);
   const [animationKey, setAnimationKey] = useState(0);
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.hash) {
+      const id = window.location.hash.substring(1);
+      const element = document.getElementById(id);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "center" });
+        }, 500);
+      }
+    }
+  }, [showCategory]);
 
   const handleCategoryChange = (category: string) => {
     setShowCategory(category);
@@ -26,6 +55,7 @@ export default function Home() {
       "Bedside Pedestals": "bedsidePedestals",
       Cabinets: "cabinets",
       Headboards: "headboards",
+      "Bespoke Furniture": "bespoke-furniture",
     };
     return (
       categories[mapping[category] as keyof typeof categories] ||

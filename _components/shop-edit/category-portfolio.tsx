@@ -15,57 +15,80 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
 
   return (
     <div className="grid grid-cols-1 gap-10 min-[600px]:grid-cols-2 min-[1000px]:grid-cols-3 tablet:gap-y-[60px] desktop:grid-cols-4">
-      {categoryData.map(({ images, name, prices, size, inStock }, index) => (
-        <Link
-          href={`/studio-selects/${name.toLowerCase().replace(/\s+/g, "-")}`}
-          aria-label={name}
-          key={index}
-        >
-          <div
-            className={classNames(
-              "overflow-hidden transition-all duration-700 ease-out",
-              {
-                "translate-y-16 opacity-0 scale-110": !isVisible,
-                "translate-y-0 opacity-100 scale-100": isVisible,
-              }
-            )}
-            style={{
-              transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
-            }}
+      {categoryData.map(
+        ({ images, name, prices, size, inStock, bespoke }, index) => (
+          <Link
+            href={`/studio-selects/${name.toLowerCase().replace(/\s+/g, "-")}`}
+            aria-label={name}
+            key={index}
           >
-            <div className="aspect-square rounded-[6px] overflow-hidden">
-              <Image
-                src={images[0]}
-                alt={name}
-                width={800}
-                height={800}
-                className="h-full bg-white w-full object-cover transition-transform duration-500 desktop:hover:scale-[102%]"
-                sizes="(max-width:800px) 400px, 100vw"
-              />
-            </div>
-            <div className="p-5 space-y-1">
-              <h3 className="text-paragraph font-thin">{name}</h3>
-              <p>Size: {size}</p>
-              <div className="flex items-center justify-between">
-                {prices[0].amountExVat != null ? (
-                  <p className="text-light-brown font-semibold">
-                    R {prices[0].amountExVat.toFixed(2)}
-                  </p>
-                ) : (
-                  <p className="text-light-brown font-semibold">
-                    R {prices[0].amountInclVat.toFixed(2)}
-                  </p>
+            <div
+              id={name.toLowerCase().replace(/\s+/g, "-")}
+              className={classNames(
+                "overflow-hidden transition-all duration-700 ease-out",
+                {
+                  "translate-y-16 opacity-0 scale-110": !isVisible,
+                  "translate-y-0 opacity-100 scale-100": isVisible,
+                }
+              )}
+              style={{
+                transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
+              }}
+            >
+              <div className="aspect-square rounded-[6px] overflow-hidden relative">
+                <Image
+                  src={images[0]}
+                  alt={name}
+                  width={800}
+                  height={800}
+                  className="h-full bg-white w-full object-cover transition-transform duration-500 desktop:hover:scale-[102%]"
+                  sizes="(max-width:800px) 400px, 100vw"
+                />
+                {bespoke && (
+                  <Link
+                    href={`/studio-selects/${name
+                      .toLowerCase()
+                      .replace(/\s+/g, "-")}`}
+                    aria-label={name}
+                    key={index}
+                  >
+                    <p className="absolute bottom-5 right-5 px-2 py-1 text-[14px] bg-light-brown text-white rounded-md">
+                      Bespoke
+                    </p>
+                  </Link>
                 )}
-                {!inStock && (
-                  <p className="uppercase font-semibold text-black/50">
-                    Sold out
+              </div>
+              <div className="p-5 space-y-1">
+                <h3 className="text-paragraph font-thin">{name}</h3>
+                {size && <p>Size: {size}</p>}
+                {prices && (
+                  <div className="flex items-center justify-between">
+                    {prices[0].amountExVat != null ? (
+                      <p className="text-light-brown font-semibold">
+                        R {prices[0].amountExVat.toFixed(2)}
+                      </p>
+                    ) : (
+                      <p className="text-light-brown font-semibold">
+                        R {prices && prices[0].amountInclVat.toFixed(2)}
+                      </p>
+                    )}
+                    {!inStock && (
+                      <p className="uppercase font-semibold text-black/50">
+                        Sold out
+                      </p>
+                    )}
+                  </div>
+                )}
+                {!prices && bespoke && (
+                  <p className="text-light-brown italic">
+                    Contact for more information
                   </p>
                 )}
               </div>
             </div>
-          </div>
-        </Link>
-      ))}
+          </Link>
+        )
+      )}
     </div>
   );
 }
