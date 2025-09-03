@@ -34,13 +34,24 @@ export default function CategoryPortfolio({ categoryData }: ProductProps) {
               transitionDelay: isVisible ? `${index * 100}ms` : "0ms",
             }}
           >
-            <div className="aspect-square rounded-[6px] overflow-hidden">
+            <div className="aspect-square rounded-[6px] overflow-hidden relative">
               <Image
-                src={images[0]}
+                src={images.find((img) => img.mainImage)?.src || images[0].src}
                 alt={name}
                 width={800}
                 height={800}
-                className="h-full bg-white w-full object-cover transition-transform duration-500 desktop:hover:scale-[102%]"
+                className={classNames("h-full bg-white w-full object-cover", {
+                  "opacity-100 ease-in-out duration-400 delay-75 desktop:hover:opacity-0": images.find((img) => img.hoverImage),
+                  "transition-transform duration-500 desktop:hover:scale-[102%]": !images.find((img) => img.hoverImage)
+                })}
+                sizes="(max-width:800px) 400px, 100vw"
+              />
+              <Image
+                src={images.find((img) => img.hoverImage)?.src || images[0].src}
+                alt={name}
+                width={800}
+                height={800}
+                className="absolute h-full inset-0 bg-white w-full object-cover -z-10"
                 sizes="(max-width:800px) 400px, 100vw"
               />
             </div>

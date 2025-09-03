@@ -13,7 +13,11 @@ import "swiper/css/navigation";
 import "swiper/css/thumbs";
 
 interface ProductSliderProps {
-  images: string[];
+  images: {
+    src: string;
+    mainImage?: boolean;
+    hoverImage?: boolean;
+  }[];
   productName: string;
 }
 
@@ -48,7 +52,7 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
           <SwiperSlide key={index}>
             <div className="w-full bg-white aspect-square rounded-[6px] overflow-hidden mb-8 desktop:mb-5">
               <Image
-                src={image}
+                src={image.src}
                 alt={`${productName} view ${index + 1}`}
                 width={700}
                 height={1000}
@@ -83,7 +87,7 @@ const ProductSlider = ({ images, productName }: ProductSliderProps) => {
             <SwiperSlide key={index} className="cursor-pointer">
               <div className="w-full aspect-square bg-white rounded-[6px] overflow-hidden">
                 <Image
-                  src={image}
+                  src={image.src}
                   alt={`${productName} thumbnail ${index + 1}`}
                   width={100}
                   height={110}

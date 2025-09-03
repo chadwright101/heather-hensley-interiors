@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { useRouter } from "next/navigation";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -23,9 +24,12 @@ const PortfolioFilter = ({
   setShowCategory,
 }: PortfolioFilterProps) => {
   const swiperRef = useRef<any>(null);
+  const router = useRouter();
 
   const handleCategoryClick = (category: string) => {
     setShowCategory(category);
+    
+    router.push("/", { scroll: false });
 
     const categoryIndex = filter.indexOf(category);
     if (swiperRef.current && categoryIndex !== -1) {

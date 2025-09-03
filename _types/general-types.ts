@@ -15,7 +15,11 @@ export interface ProductProps {
       amountInclVat: number;
       note?: string;
     }[];
-    images: string[];
+    images: {
+      src: string;
+      mainImage?: boolean;
+      hoverImage?: boolean;
+    }[];
     quantity?: number;
     inStock: boolean;
     category: string;

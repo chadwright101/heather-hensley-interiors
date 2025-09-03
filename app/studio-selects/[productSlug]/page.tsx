@@ -59,13 +59,16 @@ export async function generateMetadata({
 
   const { product } = result;
 
+  const mainImage =
+    product.images.find((img) => img.mainImage) || product.images[0];
+
   return {
     title: `${product.name} - Heather Hensley Interiors`,
     description: product.description.join(" "),
     openGraph: {
       title: `${product.name} - Heather Hensley Interiors`,
       description: product.description.join(" "),
-      images: product.images.length > 0 ? [product.images[0]] : [],
+      images: mainImage ? [{ url: mainImage.src }] : [],
     },
   };
 }
