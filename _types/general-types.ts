@@ -19,6 +19,5 @@ export interface ProductProps {
     quantity?: number;
     inStock: boolean;
     category: string;
-    bespoke?: boolean;
   }[];
 }

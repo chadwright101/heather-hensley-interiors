@@ -17,7 +17,7 @@ const reverseMapping: { [key: string]: string } = {
   bedsidePedestals: "Bedside Pedestals",
   cabinets: "Cabinets",
   headboards: "Headboards",
-  "bespoke-furniture": "Bespoke Furniture",
+  sofas: "Sofas",
 };
 
 function SearchParamsWrapper({
@@ -67,7 +67,7 @@ export default function Home() {
       "Bedside Pedestals": "bedsidePedestals",
       Cabinets: "cabinets",
       Headboards: "headboards",
-      "Bespoke Furniture": "bespoke-furniture",
+      Sofas: "sofas",
     };
     return (
       categories[mapping[category] as keyof typeof categories] ||
@@ -110,6 +110,31 @@ export default function Home() {
           setShowCategory={handleCategoryChange}
         />
         <hr className="text-light-brown w-full" />
+        {showCategory !== "Scatters" && (
+          <div className="grid gap-5">
+            <h4 className="text-center">Crafted With Purpose</h4>
+            <div className="text-center grid gap-4">
+              <p>
+                Rather than chasing trends, we’ve always focused on designing
+                pieces that feel considered, lived-in, and lasting. Over time,
+                certain sofas, daybeds, and chairs have stood out — not just to
+                us, but to the many homes they’ve found themselves in.
+              </p>
+              <p>
+                These are the designs we return to time and again. They carry a
+                quiet versatility that fits naturally into a wide range of
+                interiors, whether classic or contemporary.
+              </p>
+              <p>
+                Each piece is made to order, with options to customise
+                materials, sizing, and finishes. If you’d like to learn more or
+                begin a bespoke project, just reach out — we’ll guide you
+                through the details and cover everything you need to know,
+                including terms and conditions.
+              </p>
+            </div>
+          </div>
+        )}
         <CategoryPortfolio
           key={animationKey}
           categoryData={getCategoryData(showCategory)}

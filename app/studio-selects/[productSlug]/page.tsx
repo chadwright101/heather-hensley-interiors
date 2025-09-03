@@ -92,10 +92,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
       <div className="flex flex-col gap-10 items-center justify-start w-full">
         <div className="flex flex-col gap-5 items-start justify-start w-full">
           <div className="flex flex-col gap-1 w-full">
-            <h2 className="text-light-brown text-[30px] font-thin leading-[36px] uppercase w-full">
+            <h2 className="text-light-brown text-heading uppercase w-full">
               {product.name}
             </h2>
-            <h3 className="text-paragraph normal-case">{product.nameNote}</h3>
+            {product.nameNote && (
+              <h3 className="text-paragraph normal-case">{product.nameNote}</h3>
+            )}
           </div>
           <div className="flex justify-between w-full gap-10 min-[600px]:justify-start">
             {product.prices &&
@@ -111,13 +113,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
                     {price.note && (
                       <span className="text-light-brown text-[16px] font-medium">
-                        {" "}
                         ({price.note})
                       </span>
                     )}
                     {product.size && index === 0 && (
                       <span className="text-light-brown text-[16px] font-medium">
-                        {" "}
                         ({product.size})
                       </span>
                     )}
@@ -136,15 +136,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   )}
                 </div>
               ))}
-            {!product.prices && product.bespoke && (
-              <p className="text-light-brown italic">
-                Contact for more information
-              </p>
-            )}
           </div>
-          <p className="text-light-brown text-[18px] font-thin w-full">
-            {product.category}
-          </p>
           {!product.inStock && (
             <p className="text-[18px] text-black/50 font-semibold uppercase">
               Sold out
@@ -157,6 +149,18 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
             ))}
           </div>
+          {product.size && !product.prices && (
+            <div className="flex flex-col gap-1">
+              <p className="text-light-brown text-[16px] font-medium">
+                Size: {product.size}
+              </p>
+            </div>
+          )}
+          {!product.prices && (
+            <p className="text-light-brown italic">
+              Contact for more information
+            </p>
+          )}
           <div className="flex flex-col gap-5 pt-5 w-full border-t border-light-brown">
             <p className="font-bold">
               For enquiries, please reach out to us over WhatsApp, phone call or
