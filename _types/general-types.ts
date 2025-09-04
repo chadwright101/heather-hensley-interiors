@@ -22,6 +22,7 @@ export interface ProductProps {
     }[];
     quantity?: number;
     inStock: boolean;
+    preOrder?: boolean;
     category: string;
   }[];
 }

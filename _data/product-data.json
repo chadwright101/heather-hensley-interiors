@@ -334,11 +334,11 @@
         ],
         "images": [
           {
-            "src": "/images/products/scatters/protea-cushions/protea-cushions-2.jpg",
+            "src": "/images/products/scatters/protea-cushions/protea-cushions-3.jpg",
             "mainImage": true
           },
           {
-            "src": "/images/products/scatters/protea-cushions/protea-cushions-3.jpg"
+            "src": "/images/products/scatters/protea-cushions/protea-cushions-2.jpg"
           },
           {
             "src": "/images/products/scatters/protea-cushions/protea-cushions-1.jpg"
@@ -459,6 +459,7 @@
         "name": "Beach Palm cushion",
         "size": "50mm x 70mm",
         "inStock": false,
+        "preOrder": true,
         "category": "Scatter Cushion",
         "description": [""],
         "prices": [
@@ -568,15 +569,15 @@
         ],
         "images": [
           {
-            "src": "/images/products/scatters/quilted-blush/quilted-blush-1a.jpg",
+            "src": "/images/products/scatters/quilted-blush/quilted-blush-3a.png",
             "mainImage": true
           },
           {
-            "src": "/images/products/scatters/quilted-blush/quilted-blush-2a.png"
+            "src": "/images/products/scatters/quilted-blush/quilted-blush-1a.jpg",
+            "hoverImage": true
           },
           {
-            "src": "/images/products/scatters/quilted-blush/quilted-blush-3a.png",
-            "hoverImage": true
+            "src": "/images/products/scatters/quilted-blush/quilted-blush-2a.png"
           },
           {
             "src": "/images/products/scatters/quilted-blush/quilted-blush-4a.jpg"
