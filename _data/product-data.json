@@ -118,7 +118,7 @@
       {
         "name": "Tribal print cushion",
         "size": "65mm x 65mm",
-        "inStock": true,
+        "inStock": false,
         "category": "Scatter Cushion",
         "description": [""],
         "prices": [
@@ -180,7 +180,8 @@
       {
         "name": "Canvas Stripe",
         "size": "65mm x 65mm",
-        "inStock": true,
+        "inStock": false,
+        "preOrder": true,
         "category": "Scatter Cushion",
         "description": [""],
         "prices": [
