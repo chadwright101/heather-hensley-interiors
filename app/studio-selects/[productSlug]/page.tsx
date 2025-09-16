@@ -24,7 +24,7 @@ function findProductBySlug(
 ): { product: Product; category: string } | null {
   const { categories } = productData;
 
-  const productName = productSlug
+  const productName = decodeURIComponent(productSlug)
     .replace(/-/g, " ")
     .replace(/\b\w/g, (l) => l.toUpperCase());
 

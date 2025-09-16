@@ -3,12 +3,111 @@
   "categories": {
     "scatters": [
       {
-        "name": "Lady Swimmers",
-        "nameNote": "With a textured back",
-        "size": "50mm x 70mm",
+        "name": "Batik Indigo Scatter",
+        "size": "650mm x 650mm",
         "inStock": true,
         "category": "Scatter Cushion",
-        "description": [""],
+        "description": [
+          "Indigo Batik print in a generous size.",
+          "Create coastal look."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 700
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395,
+            "note": "700mm x 700mm"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/products/scatters/batik-indigo-scatter/batik-indigo-scatter-1.png",
+            "mainImage": true
+          }
+        ],
+        "quantity": 2
+      },
+      {
+        "name": "Spicy Batik Cushion",
+        "size": "500mm x 800mm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [
+          "Spice Batik Block print scatter cushion cover.",
+          "Large scatter, ideal on its own for dressing beds or on a large sofa."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 1150
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395,
+            "note": "550mm x 850mm"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/products/scatters/spicy-batik-cushion/spicy-batik-cushion-3.png",
+            "mainImage": true
+          },
+          {
+            "src": "/images/products/scatters/spicy-batik-cushion/spicy-batik-cushion-2.png",
+            "hoverImage": true
+          },
+          {
+            "src": "/images/products/scatters/spicy-batik-cushion/spicy-batik-cushion-1.png"
+          }
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Teal & Gold Velvet Stripe Cushion",
+        "size": "770mm x 500mm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [
+          "Velvet stripe, a lovely one off piece. Soft to the touch."
+        ],
+        "prices": [
+          {
+            "name": "Cushion cover",
+            "amountInclVat": 900
+          },
+          {
+            "name": "Inner",
+            "amountInclVat": 395,
+            "note": "800mm x 550mm - Down inner required"
+          }
+        ],
+        "images": [
+          {
+            "src": "/images/products/scatters/teal-and-gold/teal-and-gold-1.png",
+            "mainImage": true
+          },
+          {
+            "src": "/images/products/scatters/teal-and-gold/teal-and-gold-3.png",
+            "hoverImage": true
+          },
+          {
+            "src": "/images/products/scatters/teal-and-gold/teal-and-gold-2.png"
+          }
+        ],
+        "quantity": 1
+      },
+      {
+        "name": "Lady Swimmers",
+        "nameNote": "With a textured back",
+        "size": "500mm x 700mm",
+        "inStock": true,
+        "category": "Scatter Cushion",
+        "description": [
+          "Velvet stripe, a lovely one off piece. Soft to the touch."
+        ],
         "prices": [
           {
             "name": "Cushion cover",
@@ -17,7 +116,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -44,7 +143,7 @@
       {
         "name": "Suzanne in Aqua",
         "nameNote": "On Linen",
-        "size": "50mm x 70mm",
+        "size": "500mm x 700mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -56,7 +155,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -73,7 +172,7 @@
       },
       {
         "name": "Green Velvet cushion",
-        "size": "50mm x 68mm",
+        "size": "500mm x 680mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -85,7 +184,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -117,7 +216,7 @@
       },
       {
         "name": "Tribal print cushion",
-        "size": "65mm x 65mm",
+        "size": "650mm x 650mm",
         "inStock": false,
         "category": "Scatter Cushion",
         "description": [""],
@@ -129,7 +228,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "70mm x 70mm"
+            "note": "700mm x 700mm"
           }
         ],
         "images": [
@@ -143,7 +242,7 @@
       {
         "name": "Karoo Aloe",
         "nameNote": "On a linen back",
-        "size": "60mm x 60mm",
+        "size": "600mm x 600mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -155,7 +254,7 @@
           {
             "name": "Inner",
             "amountInclVat": 295.0,
-            "note": "65mm x 65mm"
+            "note": "650mm x 650mm"
           }
         ],
         "images": [
@@ -179,7 +278,7 @@
 
       {
         "name": "Canvas Stripe",
-        "size": "65mm x 65mm",
+        "size": "650mm x 650mm",
         "inStock": false,
         "preOrder": true,
         "category": "Scatter Cushion",
@@ -192,7 +291,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "70mm x 70mm"
+            "note": "700mm x 700mm"
           }
         ],
         "images": [
@@ -210,7 +309,7 @@
       {
         "name": "Aztec cushion",
         "nameNote": "With a linen back",
-        "size": "65mm x 65mm",
+        "size": "650mm x 650mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -222,7 +321,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "70mm x 70mm"
+            "note": "700mm x 700mm"
           }
         ],
         "images": [
@@ -246,7 +345,7 @@
       {
         "name": "Chalk Dust",
         "nameNote": "With velvet backs in sky blue",
-        "size": "65mm x 65mm",
+        "size": "650mm x 650mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -258,7 +357,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "70mm x 70mm"
+            "note": "700mm x 700mm"
           }
         ],
         "images": [
@@ -282,7 +381,7 @@
       {
         "name": "Crayon Graphic",
         "nameNote": "With velvet blue backs",
-        "size": "65mm x 65mm",
+        "size": "650mm x 650mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -294,7 +393,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "70mm x 70mm"
+            "note": "700mm x 700mm"
           }
         ],
         "images": [
@@ -318,7 +417,7 @@
       {
         "name": "Protea Cushions",
         "nameNote": "With velvet backs",
-        "size": "80mm x 50mm",
+        "size": "80mm x 500mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -330,7 +429,7 @@
           {
             "name": "Inner",
             "amountInclVat": 540,
-            "note": "85mm x 55mm"
+            "note": "850mm x 550mm"
           }
         ],
         "images": [
@@ -357,7 +456,7 @@
       {
         "name": "Aqua Cushions piped",
         "nameNote": "In Tangerine",
-        "size": "60mm x 60mm",
+        "size": "600mm x 600mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -369,7 +468,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "65mm x 65mm"
+            "note": "650mm x 650mm"
           }
         ],
         "images": [
@@ -390,7 +489,7 @@
       {
         "name": "Ardmore leopard print cushion",
         "nameNote": "Backed in Tangerine",
-        "size": "51mm x 70mm",
+        "size": "510mm x 700mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -402,7 +501,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 65mm"
+            "note": "550mm x 650mm"
           }
         ],
         "images": [
@@ -423,7 +522,7 @@
       {
         "name": "Blue Rosewater cushions",
         "nameNote": "Backed in a faded blue broad stripe",
-        "size": "53mm x 59mm",
+        "size": "530mm x 590mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -435,7 +534,7 @@
           {
             "name": "Inner",
             "amountInclVat": 295.0,
-            "note": "55mm x 65mm"
+            "note": "550mm x 650mm"
           }
         ],
         "images": [
@@ -458,7 +557,7 @@
       },
       {
         "name": "Beach Palm cushion",
-        "size": "50mm x 70mm",
+        "size": "500mm x 700mm",
         "inStock": false,
         "preOrder": true,
         "category": "Scatter Cushion",
@@ -471,7 +570,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -488,7 +587,7 @@
       },
       {
         "name": "Magnolia on Linen cushion",
-        "size": "50mm x 70mm",
+        "size": "500mm x 700mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -500,7 +599,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -523,7 +622,7 @@
       },
       {
         "name": "Bird on Linen cushion",
-        "size": "50mm x 70mm",
+        "size": "500mm x 700mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [""],
@@ -535,7 +634,7 @@
           {
             "name": "Inner",
             "amountInclVat": 395.0,
-            "note": "55mm x 75mm"
+            "note": "550mm x 750mm"
           }
         ],
         "images": [
@@ -555,7 +654,7 @@
       },
       {
         "name": "Quilted Blush",
-        "size": "60mm x 60mm",
+        "size": "600mm x 600mm",
         "inStock": true,
         "category": "Scatter Cushion",
         "description": [
