@@ -159,6 +159,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </p>
             </div>
           )}
+          {product.quantity && (
+            <p className="font-medium">Quantity: x {product.quantity}</p>
+          )}
           {!product.prices && (
             <p className="text-light-brown italic">
               Contact for more information

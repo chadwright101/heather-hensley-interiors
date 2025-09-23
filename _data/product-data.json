@@ -103,7 +103,7 @@
         "name": "Lady Swimmers",
         "nameNote": "With a textured back",
         "size": "500mm x 700mm",
-        "inStock": true,
+        "inStock": false,
         "category": "Scatter Cushion",
         "description": [
           "Velvet stripe, a lovely one off piece. Soft to the touch."
