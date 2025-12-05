@@ -2,7 +2,6 @@
 
 import nodemailer from "nodemailer";
 import { emailTemplate } from "@/_lib/email-template";
-import DOMPurify from "isomorphic-dompurify";
 
 interface EmailTemplateData {
   name: string;
@@ -25,15 +24,11 @@ export async function sendEmail(formData: FormData): Promise<void> {
 
   try {
     if (honey === null) {
-      const name = DOMPurify.sanitize(formData.get("name")?.toString() || "");
-      const email = DOMPurify.sanitize(formData.get("email")?.toString() || "");
-      const phone = DOMPurify.sanitize(formData.get("phone")?.toString() || "");
-      const message = DOMPurify.sanitize(
-        formData.get("message")?.toString() || ""
-      );
-      const product = DOMPurify.sanitize(
-        formData.get("product")?.toString() || ""
-      );
+      const name = formData.get("name")?.toString() || "";
+      const email = formData.get("email")?.toString() || "";
+      const phone = formData.get("phone")?.toString() || "";
+      const message = formData.get("message")?.toString() || "";
+      const product = formData.get("product")?.toString() || "";
 
       const emailHtmlContent = emailTemplate({
         name,
