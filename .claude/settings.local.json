@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__figma-mcp__FIGMA_INITIATE_CONNECTION",
+      "mcp__figma-mcp__FIGMA_CHECK_ACTIVE_CONNECTION",
+      "mcp__figma-mcp__FIGMA_GET_COMPONENT",
+      "mcp__figma-mcp__FIGMA_GET_FILE_JSON",
+      "mcp__figma-dev-mode-mcp-server__get_code",
+      "mcp__figma-dev-mode-mcp-server__get_image",
+      "Bash(mv:*)"
+    ],
+    "deny": []
+  }
+}
